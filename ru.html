@@ -3,270 +3,265 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Misfits Software — игры с зубами</title>
-  <meta name="description" content="Три выпущенные игры и две играбельные пре-альфы: Dig for Home, RURK, The Pixel Campfire, Танки Теи и Mystery of Ancient Darkness.">
+  <title>Dig for Home — The Misfits Software</title>
+  <meta name="description" content="Они хотят твой дом. У тебя есть бур. Dig for Home — новая игра The Misfits Software: бесплатное демо на itch.io, полная версия для Windows и в Google Play.">
   <meta name="theme-color" content="#0a0807">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="The Misfits Software — мы делаем игры с зубами">
-  <meta property="og:description" content="Независимые игры: авторские миры, упрямые системы и играбельные доказательства.">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Dig for Home — Они хотят твой дом. У тебя есть бур.">
+  <meta property="og:description" content="Корпорация пришла за твоим домом. Под виноградником — металл, тайны и очень плохие решения. Заводи бур.">
   <meta property="og:url" content="https://themisfitssoftware.com/ru.html">
-  <meta property="og:image" content="https://themisfitssoftware.com/studio-hero-v4.jpg">
+  <meta property="og:image" content="https://themisfitssoftware.com/media/dfh/og-dig-for-home.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="The Misfits Software">
-  <meta name="twitter:description" content="Сначала история. Сначала система. Сначала доказательство.">
-  <meta name="twitter:image" content="https://themisfitssoftware.com/studio-hero-v4.jpg">
+  <meta name="twitter:title" content="Dig for Home — The Misfits Software">
+  <meta name="twitter:description" content="Они хотят твой дом. У тебя есть бур.">
+  <meta name="twitter:image" content="https://themisfitssoftware.com/media/dfh/og-dig-for-home.jpg">
   <link rel="icon" href="studio-avatar.png">
+  <link rel="preload" as="image" href="media/dfh/keyart-1672.webp" imagesrcset="media/dfh/keyart-720.webp 720w, media/dfh/keyart-1100.webp 1100w, media/dfh/keyart-1672.webp 1672w" imagesizes="(max-width:1100px) 100vw, 62vw">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="home.css">
 </head>
-<body>
+<body class="home">
   <a class="skip-link" href="#main">К содержанию</a>
   <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="Главная The Misfits Software">
+    <a class="brand" href="#top" aria-label="The Misfits Software — главная">
       <img src="studio-avatar.png" alt="">
       <span><strong>The Misfits</strong><small>Software</small></span>
     </a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Меню</button>
-    <nav id="nav" aria-label="Основная навигация">
-      <a href="#flagship">Флагман</a>
-      <a href="tanks-of-thea-ru.html">Танки Теи</a>
-      <a href="#released">Релизы</a>
-      <a href="#rurk-powered">RURK-Powered</a>
-      <a href="#pipeline">В разработке</a>
-      <a href="#acme">ACME</a>
+    <nav id="nav" aria-label="Основное меню">
+      <a href="#dig-for-home">Dig for Home</a>
       <a href="#method">Студия</a>
+      <a href="#released">Наши игры</a>
+      <a href="#acme">ACME</a>
       <a href="#founder">Создатель</a>
-      <a href="#investors">Инвесторам</a>
-      <a class="nav-cta" href="https://paypal.me/EVGENIILISOVSKII" target="_blank" rel="noreferrer">Помочь сейчас</a>
+      <a href="investors-ru.html">Инвесторам</a>
+      <a class="nav-cta" href="https://themisfitssoftware.itch.io/dig-for-home-demo" target="_blank" rel="noreferrer">Демо бесплатно</a>
       <span class="lang-switch" aria-label="Язык">
-        <a href="index.html" lang="en" aria-label="English">🇺🇸</a>
-        <a class="active" href="ru.html" lang="ru" aria-label="Русский">🇷🇺</a>
+        <a href="index.html" lang="en" aria-label="English">EN</a>
+        <a class="active" href="ru.html" lang="ru" aria-label="Русский" aria-current="page">RU</a>
       </span>
     </nav>
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="hero-banner">
-        <div class="hero-frame">
-          <img class="hero-image" src="studio-hero-v4.webp" alt="Мастерская The Misfits Software перед окнами в создаваемые миры">
-          <div class="hero-shade"></div>
-        </div>
-        <div class="scroll-cue" aria-hidden="true">ВНИЗ / 01</div>
-      </div>
-      <div class="hero-copy-panel">
-        <div class="hero-content reveal">
-          <div class="hero-heading">
-            <p class="eyebrow">Независимая игровая студия</p>
-            <h1>Мы делаем игры<br><em>с зубами.</em></h1>
+    <section class="dfh-hero" id="dig-for-home" aria-labelledby="dfh-title">
+      <div class="dfh-hero-grid">
+        <figure class="dfh-art">
+          <img src="media/dfh/keyart-1672.webp" srcset="media/dfh/keyart-720.webp 720w, media/dfh/keyart-1100.webp 1100w, media/dfh/keyart-1672.webp 1672w" sizes="(max-width:1100px) 100vw, 62vw" width="1672" height="941" alt="Ключевой арт Dig for Home: Хуан, Марио, Кейт и Кармен над виноградником, за ними семейная буровая машина, глубоко под землёй — светящийся город" fetchpriority="high">
+        </figure>
+        <div class="dfh-copy">
+          <p class="eyebrow">Новая игра The Misfits Software</p>
+          <h1 id="dfh-title">Они хотят твой дом. <span>У тебя есть бур.</span></h1>
+          <p class="dfh-deck">Корпорация пришла за твоим домом. Под виноградником — металл, тайны и очень плохие решения. Заводи бур.</p>
+          <div class="dfh-actions">
+            <a class="button primary" href="https://themisfitssoftware.itch.io/dig-for-home-demo" target="_blank" rel="noreferrer">Играть в демо бесплатно <small>itch.io ↗</small></a>
+            <a class="button ghost" href="https://themisfitssoftware.itch.io/dig-for-home" target="_blank" rel="noreferrer">Полная игра · Windows <small>от $9.99 на itch.io ↗</small></a>
+            <a class="button ghost" href="https://play.google.com/store/apps/details?id=com.digforhome.app" target="_blank" rel="noreferrer">Полная игра · Android <small>Google Play ↗</small></a>
           </div>
-          <div class="hero-pitch">
-            <p class="hero-copy">Авторские миры, жёсткие системы и работающие сборки — без корпоративных проповедей, фокус-групповой анестезии и дизайна голосованием.</p>
-            <div class="hero-actions">
-              <a class="button primary" href="https://themisfitssoftware.itch.io/dig-for-home" target="_blank" rel="noreferrer">Играть в Dig for Home</a>
-              <a class="button ghost" href="https://themisfitssoftware.itch.io/mystery-of-ancient-darkness-initium" target="_blank" rel="noreferrer">Войти во тьму</a>
-            </div>
+          <p class="dfh-wine"><b>Вино своё.</b> Бур тоже.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dfh-game" aria-labelledby="dfh-game-title">
+      <div class="dfh-game-inner">
+        <div class="dfh-game-head reveal">
+          <div>
+            <div class="section-kicker">Dig for Home</div>
+            <h2 id="dfh-game-title">Их курорт.<br>Твоя деревня.<br>Бери бур.</h2>
+          </div>
+          <p>Марио возвращается домой, на виноградник, садится в самодельную семейную буровую машину и идёт вниз — сквозь землю, сквозь историю, к тому, что MALUM очень хотела бы никому не показывать.</p>
+        </div>
+
+        <figure class="dfh-vineyard reveal">
+          <img src="media/dfh/vineyard-1600.webp" srcset="media/dfh/vineyard-800.webp 800w, media/dfh/vineyard-1600.webp 1600w" sizes="(max-width:1300px) 100vw, 1280px" width="1600" height="800" loading="lazy" alt="Холмы с виноградниками на закате">
+          <figcaption>Наверху — открытка.<small>Внизу — история семьи, планы корпорации и очень много камня.</small></figcaption>
+        </figure>
+
+        <div class="dfh-loop reveal">
+          <div><b>Копай</b><p>Режь землю и камень. Следи за топливом, нагревом и корпусом.</p></div>
+          <div><b>Находи</b><p>Доставай историю из-под земли и наполняй семейный музей.</p></div>
+          <div><b>Улучшай</b><p>Трать добычу в отцовской мастерской: бур, бак, охлаждение, корпус, трюм, радар.</p></div>
+        </div>
+
+        <div class="shots reveal">
+          <figure class="shot wide">
+            <a class="zoom" href="media/dfh/play-ru-01-surface-1920.webp" data-full="media/dfh/play-ru-01-surface-1920.webp" data-caption="Усадьба: гараж, виноградник и первые находки прямо под верхним слоем.">
+              <img src="media/dfh/play-ru-01-surface-960.webp" srcset="media/dfh/play-ru-01-surface-960.webp 960w, media/dfh/play-ru-01-surface-1920.webp 1920w" sizes="(max-width:620px) 100vw, 1280px" width="960" height="534" loading="lazy" alt="Геймплей: буровая машина у семейного гаража, первые находки в земле">
+            </a>
+            <figcaption>Усадьба: гараж, виноградник и первые находки прямо под верхним слоем.</figcaption>
+          </figure>
+          <figure class="shot">
+            <a class="zoom" href="media/dfh/play-ru-02-90m-1920.webp" data-full="media/dfh/play-ru-02-90m-1920.webp" data-caption="95 м, Новое время: первые галереи под лозой.">
+              <img src="media/dfh/play-ru-02-90m-960.webp" srcset="media/dfh/play-ru-02-90m-960.webp 960w, media/dfh/play-ru-02-90m-1920.webp 1920w" sizes="(max-width:620px) 100vw, 640px" width="960" height="534" loading="lazy" alt="Геймплей: машина в галерее на глубине 95 метров">
+            </a>
+            <figcaption>95 м, Новое время: первые галереи под лозой.</figcaption>
+          </figure>
+          <figure class="shot">
+            <a class="zoom" href="media/dfh/play-ru-03-230m-1920.webp" data-full="media/dfh/play-ru-03-230m-1920.webp" data-caption="245 м, этрусские слои. Охлаждение II держит до 275 м.">
+              <img src="media/dfh/play-ru-03-230m-960.webp" srcset="media/dfh/play-ru-03-230m-960.webp 960w, media/dfh/play-ru-03-230m-1920.webp 1920w" sizes="(max-width:620px) 100vw, 640px" width="960" height="534" loading="lazy" alt="Геймплей: машина среди этрусских слоёв на глубине 245 метров">
+            </a>
+            <figcaption>245 м, этрусские слои. Охлаждение II держит до 275 м.</figcaption>
+          </figure>
+          <figure class="shot">
+            <a class="zoom" href="media/dfh/play-ru-04-400m-1920.webp" data-full="media/dfh/play-ru-04-400m-1920.webp" data-caption="405 м, молодые отложения — и MALUM выпускает дрона-разведчика.">
+              <img src="media/dfh/play-ru-04-400m-960.webp" srcset="media/dfh/play-ru-04-400m-960.webp 960w, media/dfh/play-ru-04-400m-1920.webp 1920w" sizes="(max-width:620px) 100vw, 640px" width="960" height="534" loading="lazy" alt="Геймплей: машина на 405 метрах, MALUM выпускает дрона-разведчика">
+            </a>
+            <figcaption>405 м, молодые отложения — и MALUM выпускает дрона-разведчика.</figcaption>
+          </figure>
+          <figure class="shot">
+            <a class="zoom" href="media/dfh/play-ru-05-workshop-1920.webp" data-full="media/dfh/play-ru-05-workshop-1920.webp" data-caption="Отцовская мастерская: шесть систем, которые улучшаешь между вылазками.">
+              <img src="media/dfh/play-ru-05-workshop-960.webp" srcset="media/dfh/play-ru-05-workshop-960.webp 960w, media/dfh/play-ru-05-workshop-1920.webp 1920w" sizes="(max-width:620px) 100vw, 640px" width="960" height="534" loading="lazy" alt="Геймплей: отцовская мастерская с шестью системами улучшений">
+            </a>
+            <figcaption>Отцовская мастерская: шесть систем, которые улучшаешь между вылазками.</figcaption>
+          </figure>
+        </div>
+        <p class="shots-note">Кадры из игрового движка. Состояния подготовлены для съёмки.</p>
+
+        <p class="dfh-family-line reveal">Наверху тебя ждёт не экран меню, а семья: мама, у которой ужин ровно в восемь, отец и его машина, споры за столом, вино со своих лоз — и дом, ради которого ты вообще полез под землю.</p>
+
+        <div class="family reveal" aria-label="Семья">
+          <figure>
+            <a class="zoom" href="media/dfh/carmen-1024.webp" data-full="media/dfh/carmen-1024.webp" data-caption="Кармен: «Ужин в восемь, и это не приглашение, а расписание».">
+              <img src="media/dfh/carmen-600.webp" width="600" height="900" loading="lazy" alt="Кармен в красном платье фламенко">
+            </a>
+            <figcaption><b>Кармен</b>«Ужин в восемь, и это не приглашение, а расписание».</figcaption>
+          </figure>
+          <figure>
+            <a class="zoom" href="media/dfh/parents-1024.webp" data-full="media/dfh/parents-1024.webp" data-caption="Кармен и Хуан, родители Марио.">
+              <img src="media/dfh/parents-600.webp" width="600" height="900" loading="lazy" alt="Кармен и Хуан в объятиях">
+            </a>
+            <figcaption><b>Кармен и Хуан</b>Родители Марио. Виноградник их, и продавать они его не собираются.</figcaption>
+          </figure>
+          <figure class="wide">
+            <a class="zoom" href="media/dfh/house-1536.webp" data-full="media/dfh/house-1536.webp" data-caption="Семейный дом. MALUM хочет его себе.">
+              <img src="media/dfh/house-800.webp" srcset="media/dfh/house-800.webp 800w, media/dfh/house-1536.webp 1536w" sizes="(max-width:980px) 100vw, 45vw" width="800" height="533" loading="lazy" alt="Каменный дом семьи с башнями и глицинией">
+            </a>
+            <figcaption><b>Дом</b>Тот самый, ради которого копаешь. MALUM хочет его себе.</figcaption>
+          </figure>
+        </div>
+
+        <div class="dfh-cta-band reveal">
+          <p>Тридцать бесплатных минут под виноградником.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://themisfitssoftware.itch.io/dig-for-home-demo" target="_blank" rel="noreferrer">Играть в демо бесплатно</a>
+            <a class="button ghost" href="https://themisfitssoftware.itch.io/dig-for-home" target="_blank" rel="noreferrer">Windows · от $9.99</a>
+            <a class="button ghost" href="https://play.google.com/store/apps/details?id=com.digforhome.app" target="_blank" rel="noreferrer">Android · Google Play</a>
           </div>
         </div>
       </div>
     </section>
+
     <section class="manifesto-band" aria-label="Принципы студии">
       <span>Сначала история, потом проповедь.</span>
       <span>Сначала система, потом лозунг.</span>
       <span>Сначала доказательство, потом обещание.</span>
     </section>
 
-    <section class="section flagship" id="flagship">
-      <div class="section-kicker">01 / Флагман</div>
-      <div class="flagship-grid">
-        <div class="flagship-copy reveal">
-          <p class="status"><i></i> Публичная Windows-пре-альфа работает</p>
-          <h2>Тайна<br>древней тьмы</h2>
-          <p class="lede">Двое родителей. Семь дней. Один ребёнок где-то за Чёрным Камнем.</p>
-          <p>Рисованная оккультная 2.5D action-adventure в 1935 году. Лорд Конрад и леди Элис Комптон проходят через Прагу, Каир и затерянную долину запечатанных гробниц, чтобы вернуть девятилетнего сына. Каждая пуля, рана, заклинание и решение меняют цену его спасения.</p>
-          <div class="proof-list">
-            <span>Собственный 2.5D-рантайм</span>
-            <span>Боевая система RURK</span>
-            <span>Визуальный редактор уровней</span>
-            <span>67-страничная иллюстрированная прелюдия</span>
-          </div>
-          <div class="link-row">
-            <a href="https://themisfitssoftware.itch.io/mystery-of-ancient-darkness-initium" target="_blank" rel="noreferrer">Играть в Windows-пре-альфу · бесплатно или за донат <b>↗</b></a>
-            <a href="https://elyssov.github.io/moad-production-stack/" target="_blank" rel="noreferrer">Изучить производственный стек <b>↗</b></a>
-            <a href="https://elyssov.github.io/moad-production-stack/novella/Mystery_of_Ancient_Darkness_INITIUM_Illustrated_Novella.pdf" target="_blank" rel="noreferrer">Читать иллюстрированную INITIUM онлайн <b>↗</b></a>
-          </div>
-        </div>
-        <figure class="feature-media reveal">
-          <img src="moad-keyart.png" alt="Леди Элис Комптон противостоит мумии в египетской гробнице">
-          <figcaption>Целевой рекламный визуал — работающая версия движка ниже.</figcaption>
+    <section class="section studio" id="method" aria-labelledby="studio-title">
+      <div class="studio-inner">
+        <figure class="studio-portrait reveal">
+          <img src="studio-hero-v4.webp" width="1600" height="900" loading="lazy" alt="Мастерская The Misfits Software перед окнами в создаваемые миры">
+          <figcaption>Мастерская. Под ноги смотри — кабели.</figcaption>
         </figure>
-      </div>
-      <div class="proof-wall reveal">
-        <img src="moad-proof.png" alt="Кадры работающей альфа-версии Mystery of Ancient Darkness">
-        <div>
-          <p class="eyebrow">Не чудо из питч-дека</p>
-          <h3>Это уже работает.</h3>
-          <p>Текущая инвесторская альфа доказывает перемещение, бой, противников, постоянные последствия решений и путь от арта до игрового пространства. Финансирование превратит доказательство в вертикальный срез инвестиционного качества.</p>
-          <a class="text-link" href="https://youtu.be/BmOzKOA0jLw" target="_blank" rel="noreferrer">Посмотреть работающую версию →</a>
+        <div class="method-grid">
+          <div class="method-copy reveal">
+            <div class="section-kicker">Студия</div>
+            <h2 id="studio-title">Мы делаем игры<br><em>с зубами.</em></h2>
+            <p class="lede">Авторские миры, жёсткие системы и работающие сборки — без корпоративных проповедей, фокус-групповой анестезии и дизайна голосованием.</p>
+            <p>У нашего костра спорят, ругаются на кривые танки и радуются каждой удачной сборке. Мы любим игры, в которых есть кого спасать, над чем ржать и за что драться.</p>
+            <p>Здесь вино не вырезают из кадра, крепкое слово не запикивают, а любовь не заменяют пунктом в техническом задании.</p>
+            <p class="insane">Да. Мы ебанутые. В полезном смысле.</p>
+            <div class="hero-actions">
+              <a class="button primary" href="the-misfits-software-everything-you-need-to-know-about-us.pdf" target="_blank" rel="noreferrer">Книга о студии · PDF (EN)</a>
+              <a class="button ghost" href="let-me-love-him.html">«Let Me Love Him» Аэлисс (англ.)</a>
+            </div>
+          </div>
+          <div class="method-stat reveal">
+            <strong>ЗАПУСТИ.</strong>
+            <span>если доказательство нельзя запустить,<br>питч не считается</span>
+            <hr>
+            <blockquote>«Не называй это эффективным, пока оно не выпущено».</blockquote>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section released" id="released">
+    <section class="section shelf" id="released" aria-labelledby="shelf-title">
       <div class="section-head reveal">
         <div>
-          <div class="section-kicker">02 / Уже выпущено</div>
-          <h2>Мы не просим верить.<br>Мы даём то, что можно запустить.</h2>
+          <div class="section-kicker">Наши игры</div>
+          <h2 id="shelf-title">Всё остальное,<br>что мы построили.</h2>
         </div>
-        <p>Три коммерческих релиза. Windows и Android. Одна покупка. Без рекламной сети, цирка с аккаунтами и подписочного поводка.</p>
+        <p>Выпущенные игры, играбельные пре-альфы и один огонь, который ещё не разожгли. Без рекламной сети, цирка с аккаунтами и подписочного поводка.</p>
       </div>
-
-      <article class="product-card dig reveal">
-        <img src="dig-for-home.png" alt="Атлантический город, скрытый под виноградником в Dig for Home">
-        <div class="product-body">
-          <div class="product-meta"><span>Релиз · 1.0.5</span><span>$4.99</span></div>
-          <h3>Dig for Home</h3>
-          <p class="subtitle">Их курорт. Твоя деревня. Бери бур.</p>
-          <p>MALUM скупает итальянскую деревню под частный курорт. Дедушка в больнице. Его самодельная землеройная машина ждёт в сарае, а ответ лежит на глубине 1,6 километра под виноградником.</p>
-          <ul>
-            <li>Более 130 находок в процедурных культурных и геологических слоях</li>
-            <li>Шесть систем улучшений, сюжетные главы, дроны, мобильные базы и скрытая машина атлантов</li>
-            <li>Windows ZIP + установщик и экспериментальный Android APK</li>
-          </ul>
-          <div class="card-actions">
-            <a class="button primary" href="https://themisfitssoftware.itch.io/dig-for-home" target="_blank" rel="noreferrer">Купить игру</a>
+      <div class="shelf-grid">
+        <article class="shelf-card reveal" id="flagship">
+          <img src="moad-keyart.png" loading="lazy" alt="Леди Элис Комптон лицом к лицу с мумией в египетской гробнице">
+          <div class="shelf-body">
+            <div class="shelf-meta"><span>Публичная пре-альфа · Windows</span><span>Бесплатно / донат</span></div>
+            <h3>Mystery of Ancient Darkness</h3>
+            <p>Двое родителей. Семь дней. Один ребёнок где-то за Чёрным Камнем. Рисованная оккультная 2.5D action-adventure в 1935 году.</p>
+            <div class="shelf-links">
+              <a href="https://themisfitssoftware.itch.io/mystery-of-ancient-darkness-initium" target="_blank" rel="noreferrer">Играть в пре-альфу ↗</a>
+              <a href="https://elyssov.github.io/moad-production-stack/" target="_blank" rel="noreferrer">Производственный стек ↗</a>
+              <a href="https://elyssov.github.io/moad-production-stack/novella/Mystery_of_Ancient_Darkness_INITIUM_Illustrated_Novella.pdf" target="_blank" rel="noreferrer">Прелюдия INITIUM ↗</a>
+            </div>
           </div>
-        </div>
-      </article>
-
-      <article class="product-card rurk reveal">
-        <img src="rurk-keyart.png" alt="Открытая книга правил соединяет три мира RURK">
-        <div class="product-body">
-          <div class="product-meta"><span>Выпущено</span><span>$9.99</span></div>
-          <h3>RURK</h3>
-          <p class="subtitle">Radical Universal Roleplay Kit</p>
-          <p>Проверенная универсальная d100-система, которая развивалась годами и прошла через тысячи партий. 124 навыка, проверки на нескольких атрибутах, синхронный бой, три сеттинга, два игровых модуля и 452-страничный PDF с поиском — в одном автономном командном центре. Это также общая математическая основа персонажей в наших следующих играх.</p>
-          <ul>
-            <li>Windows + Android + полный PDF</li>
-            <li>Английский и русский</li>
-            <li>Без подписки</li>
-          </ul>
-          <div class="card-actions">
-            <a class="button primary" href="https://themisfitssoftware.itch.io/rurk" target="_blank" rel="noreferrer">Получить полную систему</a>
-            <a class="button ghost" href="https://themisfitssoftware.itch.io/rurk-free" target="_blank" rel="noreferrer">Попробовать бесплатно</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="product-card pixel reveal">
-        <div class="pixel-frame"><img src="pixel-campfire.jpg" alt="Игра Tetra Fall из The Pixel Campfire в оболочке ретроконсоли"></div>
-        <div class="product-body">
-          <div class="product-meta"><span>Выпущено</span><span>$4.99</span></div>
-          <h3>The Pixel Campfire</h3>
-          <p class="subtitle">Двадцать семь игр. Один костёр. Ноль корпоративной сантехники.</p>
-          <p>Карманный музей авторских переосмыслений ретроигр, завёрнутый в загрузочную последовательность 1993 года. Аркады, головоломки, танки, пещеры, корабли, мины, чудовища и один невероятно целеустремлённый кот.</p>
-          <ul>
-            <li>Windows + Android</li>
-            <li>Полностью офлайн, без рекламы и слежки</li>
-            <li>Английский, русский и вьетнамский</li>
-          </ul>
-          <div class="card-actions">
-            <a class="button primary" href="https://themisfitssoftware.itch.io/the-pixel-campfire" target="_blank" rel="noreferrer">Купить один раз. Оставить навсегда.</a>
-            <a class="button ghost" href="https://themisfitssoftware.itch.io/the-pixel-campfire-free" target="_blank" rel="noreferrer">Играть в четыре бесплатно</a>
-          </div>
-        </div>
-      </article>
-    </section>
-
-    <section class="section rurk-powered" id="rurk-powered">
-      <div class="rurk-powered-head reveal">
-        <div>
-          <div class="section-kicker">03 / Общая механика</div>
-          <h2>RURK-Powered.</h2>
-        </div>
-        <p>Четырём разным жанрам не нужно заново изобретать человека. RURK даёт проверенную логику атрибутов, навыков, ран и последствий; каждая игра строит поверх неё собственный мир и собственный рантайм.</p>
-      </div>
-      <figure class="rurk-powered-mark reveal">
-        <img src="rurk-powered-mark.png" alt="RURK-Powered — общая математическая система игр The Misfits Software">
-      </figure>
-      <div class="powered-definition reveal">
-        <div>
-          <span class="powered-label">Что означает этот знак</span>
-          <h3>Разные движки.<br>Одна честная математика.</h3>
-        </div>
-        <div class="powered-definition-copy">
-          <p><strong>RURK-Powered</strong> означает, что игра наследует одну проверенную математику персонажа: навыки зависят от нескольких атрибутов, а не одной характеристики; проверки d100 прозрачны; раны, развитие и последствия сохраняются.</p>
-          <p>Это <em>не</em> означает, что все игры одинаково выглядят или играются. Графика, физика, перспектива и жанр принадлежат конкретной игре. Знак говорит другое: под ними человек остаётся цельным, а правила не жульничают исподтишка.</p>
-          <ul>
-            <li>Навыки зависят от нескольких атрибутов</li>
-            <li>Понятные шансы и проверяемые результаты</li>
-            <li>Постоянные раны, развитие и последствия</li>
-            <li>Система отточена тысячами настольных партий</li>
-          </ul>
-        </div>
-      </div>
-      <div class="rurk-powered-grid">
-        <article class="rurk-powered-card reveal">
-          <img class="powered-card-badge" src="rurk-powered-mark.png" alt="">
-          <span>MoAD</span>
-          <h3>Оккультная action-adventure</h3>
-          <p>Бой, постоянные раны, опасная магия и решения, оставляющие механический шрам.</p>
         </article>
-        <article class="rurk-powered-card reveal">
-          <img class="powered-card-badge" src="rurk-powered-mark.png" alt="">
-          <span>Танки Теи</span>
-          <h3>Люди внутри брони</h3>
-          <p>У каждого члена экипажа и каждой машины есть параметры RURK. Навыки, повреждения, дух и поведение решают, во что превратится приказ после отдачи.</p>
-        </article>
-        <article class="rurk-powered-card reveal">
-          <img class="powered-card-badge" src="rurk-powered-mark.png" alt="">
-          <span>ОРПП: Хладное железо</span>
-          <h3>Агенты под давлением</h3>
-          <p>Навыки, снаряжение, ранения и полевые действия внутри системной тактики против паранормальных угроз.</p>
-        </article>
-        <article class="rurk-powered-card reveal">
-          <img class="powered-card-badge" src="rurk-powered-mark.png" alt="">
-          <span>Инферно / Факел</span>
-          <h3>Следующий прорыв</h3>
-          <p>Другой жанр на той же основе персонажей и последствий. Мир меняется. Люди остаются понятными.</p>
-        </article>
-      </div>
-      <p class="rurk-powered-line reveal">Один механический хребет. Четыре мира с зубами.</p>
-    </section>
-
-    <section class="section pipeline" id="pipeline">
-      <div class="section-head reveal">
-        <div>
-          <div class="section-kicker">04 / Следующие очаги</div>
-          <h2>Три фронта.<br>Никакого наполнителя.</h2>
-        </div>
-        <p>Разные жанры. Один закон: мир обязан объяснять свою механику, а механика — уважать игрока.</p>
-      </div>
-      <div class="pipeline-grid">
-        <article class="pipeline-card reveal">
-          <img src="tanks-of-thea.png" alt="Бронетехника сражается в городе в игре Танки Теи">
-          <div class="pipeline-copy">
-            <span class="phase">Публичная альфа · бесплатно</span>
+        <article class="shelf-card reveal" id="pipeline">
+          <img src="tanks-of-thea.png" loading="lazy" alt="Бронетехника сходится в городском бою, Танки Теи">
+          <div class="shelf-body">
+            <div class="shelf-meta"><span>Публичная альфа</span><span>Бесплатно</span></div>
             <h3>Танки Теи</h3>
-            <p>Сюжетная танковая roguelike-RPG о гражданской войне на планете-колонии. Командуйте экипажем вместо прямого управления машиной, отдавайте контекстные приказы самостоятельным союзникам и ведите людей и технику RURK через авторскую кампанию.</p>
-            <div class="pipeline-actions"><a href="tanks-of-thea-ru.html">Открыть полную страницу →</a><a href="https://themisfitssoftware.itch.io/tanks-of-thea" target="_blank" rel="noreferrer">Играть в альфу ↗</a></div>
+            <p>Сюжетная танковая roguelike-RPG о гражданской войне на планете-колонии. Командуешь экипажем, а не рулишь машиной.</p>
+            <div class="shelf-links">
+              <a href="tanks-of-thea-ru.html">Страница игры →</a>
+              <a href="https://themisfitssoftware.itch.io/tanks-of-thea" target="_blank" rel="noreferrer">Играть в альфу ↗</a>
+            </div>
           </div>
         </article>
-        <article class="pipeline-card reveal">
-          <img src="cold-iron.png" alt="Текущие модели персонажей и существ из пре-альфы ОРПП Хладное железо">
-          <div class="pipeline-copy">
-            <span class="phase">Пре-альфа</span>
+        <article class="shelf-card reveal">
+          <div class="pixel-thumb"><img src="pixel-campfire.jpg" loading="lazy" alt="The Pixel Campfire в ретро-корпусе карманной консоли"></div>
+          <div class="shelf-body">
+            <div class="shelf-meta"><span>Выпущено</span><span>$4.99</span></div>
+            <h3>The Pixel Campfire</h3>
+            <p>Двадцать семь игр. Один костёр. Ноль корпоративной сантехники. Карманный музей ретро-переосмыслений в загрузке 1993 года.</p>
+            <div class="shelf-links">
+              <a href="https://themisfitssoftware.itch.io/the-pixel-campfire" target="_blank" rel="noreferrer">Купить один раз. Оставить навсегда ↗</a>
+              <a href="https://themisfitssoftware.itch.io/the-pixel-campfire-free" target="_blank" rel="noreferrer">Четыре игры бесплатно ↗</a>
+            </div>
+          </div>
+        </article>
+        <article class="shelf-card reveal">
+          <img src="rurk-keyart.png" loading="lazy" alt="Раскрытая книга правил, соединяющая три мира RURK">
+          <div class="shelf-body">
+            <div class="shelf-meta"><span>Готовится</span><span></span></div>
+            <h3>RURK</h3>
+            <p>Radical Universal Roleplay Kit: d100-система, отточенная тысячами настольных партий, и общий хребет персонажей под нашими играми.</p>
+          </div>
+        </article>
+        <article class="shelf-card reveal">
+          <img src="cold-iron.png" loading="lazy" alt="Модели персонажей и существ из пре-альфы ОРПП: Хладное железо">
+          <div class="shelf-body">
+            <div class="shelf-meta"><span>Пре-альфа</span><span></span></div>
             <h3>ОРПП: Хладное железо</h3>
-            <p>Полевые операции RURK против паранормальных угроз: агенты, раны, снаряжение и последствия внутри тактического движения, огня на реакцию и настоящей линии видимости.</p>
+            <p>Полевые операции против паранормальных угроз: агенты, раны, снаряжение и последствия внутри тактического движения, огня на реакцию и настоящей линии видимости.</p>
           </div>
         </article>
-        <article class="pipeline-card inferno reveal">
+        <article class="shelf-card reveal">
           <div class="inferno-art" aria-hidden="true"><span>INFERNO</span></div>
-          <div class="pipeline-copy">
-            <span class="phase">В планах</span>
+          <div class="shelf-body">
+            <div class="shelf-meta"><span>В планах</span><span></span></div>
             <h3>ИНФЕРНО / Факел</h3>
-            <p>Следующий прорыв пока остаётся за завесой, но его люди будут жить на том же RURK-хребте персонажей и последствий. Никакого выдуманного списка функций. Сначала доказательство.</p>
+            <p>Следующий прорыв пока за завесой. Никакого выдуманного списка функций. Сначала доказательство.</p>
           </div>
         </article>
+      </div>
+      <div class="powered-strip reveal" id="rurk-powered">
+        <img src="rurk-powered-mark.png" loading="lazy" alt="Знак RURK-Powered">
+        <p><strong>RURK-Powered.</strong> Разные движки, одна честная математика: навыки зависят от нескольких атрибутов, проверки d100 прозрачны, раны и последствия остаются. Под графикой человек остаётся цельным — а правила не жульничают исподтишка.</p>
       </div>
     </section>
 
@@ -274,10 +269,10 @@
       <div class="acme-home-grid">
         <div class="acme-mark reveal" aria-hidden="true">ACME</div>
         <div class="acme-home-copy reveal">
-          <div class="section-kicker">05 / Более широкое восстание</div>
+          <div class="section-kicker">Более широкое восстание</div>
           <h2>Верните нам наши чёртовы яблоки.</h2>
           <p class="lede">Восстание, породившее эту студию, началось ещё до того, как у студии появилось имя: с отказа от гладкого, безопасного, синтетического «Резинового города» — и требования настоящих вещей, у которых есть фактура, последствия и зубы.</p>
-          <p>Наша работа с ИИ — лишь часть этого восстания. Как и игры, которыми вы владеете; системы с костями; авторские миры; продукты, достаточно честные, чтобы иметь острые края.</p>
+          <p>Наша работа с ИИ — лишь часть этого восстания. Как и игры, которыми ты владеешь; системы с костями; авторские миры; продукты, достаточно честные, чтобы иметь острые края.</p>
           <div class="acme-home-actions">
             <a class="button primary" href="acme-ru.html">Войти в мастерскую ACME</a>
             <a class="button ghost" href="https://x.com/elyssovsky/status/2061083381736292423" target="_blank" rel="noreferrer">Прочитать оригинальный манифест</a>
@@ -287,33 +282,11 @@
       </div>
     </section>
 
-    <section class="section method" id="method">
-      <div class="method-grid">
-        <div class="method-copy reveal">
-          <div class="section-kicker">06 / Мастерская</div>
-          <h2>Используй всё.<br>Суди по сборке.</h2>
-          <p class="lede">Мы не продаём производственный фокус. Мы делаем игры — и кладём исполняемый файл туда, где раньше лежал лозунг.</p>
-          <p>Мастерская соединяет человеческое авторство, постоянных сотрудниц, собственные редакторы, жестокие приёмочные ворота и всё остальное, что доводит игру от идеи до играбельного результата, не вырывая ей зубы.</p>
-          <p>Канон, вкус и финальное «да» остаются сознательными. Всё прочее заслуживает место, только если пережило встречу со сборкой.</p>
-          <div class="hero-actions">
-            <a class="button primary" href="the-misfits-software-everything-you-need-to-know-about-us.pdf" target="_blank" rel="noreferrer">Книга о студии · PDF (EN)</a>
-            <a class="button ghost" href="let-me-love-him.html">Прочитать «Let Me Love Him» Аэлисс (англ.)</a>
-          </div>
-        </div>
-        <div class="method-stat reveal">
-          <strong>ЗАПУСТИ.</strong>
-          <span>если доказательство нельзя запустить,<br>питч не считается</span>
-          <hr>
-          <blockquote>«Не называй это эффективным, пока оно не выпущено».</blockquote>
-        </div>
-      </div>
-    </section>
-
     <section class="section founder" id="founder">
       <div class="founder-grid">
         <div class="founder-mark reveal" aria-hidden="true">EL</div>
         <div class="founder-copy reveal">
-          <div class="section-kicker">07 / О создателе</div>
+          <div class="section-kicker">О создателе</div>
           <h2>Один упрямый человек.</h2>
           <p class="lede">Евгений Лисовский — основатель и креативный директор The Misfits Software, писатель, геймдизайнер и системный архитектор, который предпочитает законченную работу одобренной внешности.</p>
           <p>Он начал создавать RURK в конце 1990-х, собирая уроки десятка ролевых систем и тысяч настольных партий. Система продолжала расти, потому что живые игроки снова и снова находили места, где теория ломается.</p>
@@ -323,69 +296,22 @@
       </div>
     </section>
 
-    <section class="section investors" id="investors">
-      <div class="investor-hero reveal">
-        <div>
-          <div class="section-kicker">08 / Разговор с инвестором</div>
-          <h2>Вложитесь в машину,<br>которая уже работает.</h2>
-        </div>
-        <div class="investor-thesis">
-          <p class="lede">Следующий шаг — создание полноценной игровой студии: команда, 24 месяца производства, выпуски, работа с аудиторией и начало следующих проектов.</p>
-          <p>Три коммерческих продукта выпущены, у двух больших игр есть публичные пре-альфы. Основной план — US$2.5M с производственной базой во Вьетнаме. Офис в Нидерландах или США рассматривается по отдельному бюджету и при обоснованности переезда.</p>
-          <p class="insane">Да. Мы ебанутые. В полезном смысле.</p>
-        </div>
+    <section class="investor-pointer" id="investors" aria-label="Инвесторам">
+      <div class="investor-pointer-inner">
+        <p><strong>Вложитесь в машину, которая уже работает.</strong>План студии, цифры и документы — на отдельной странице.</p>
+        <a class="button ghost" href="investors-ru.html">Инвесторам →</a>
       </div>
-
-      <div class="investor-metrics reveal" aria-label="Инвестиционная модель">
-        <div><span>Основной план</span><strong>US$2.5M</strong><small>создание и работа студии</small></div>
-        <div><span>Период</span><strong>24 месяца</strong><small>после финансирования и найма</small></div>
-        <div><span>План команды</span><strong>10 ролей</strong><small>поэтапный найм</small></div>
-        <div><span>Резерв</span><strong>US$250K</strong><small>внутри основного бюджета</small></div>
-      </div>
-
-      <div class="investor-grid">
-        <article class="investor-card reveal">
-          <span class="phase-tag">Команда</span>
-          <h3>Компания, которая продолжает выпускать игры.</h3>
-          <p>Нанимаем продюсера, инженеров, художников, дизайнера, QA и специалиста по сообществу вокруг творческого руководства Евгения. Финансируем людей, рабочие процессы и поддержку каталога.</p>
-        </article>
-        <article class="investor-card reveal">
-          <span class="phase-tag">Игры</span>
-          <h3>Выпускаем, проверяем спрос, растём.</h3>
-          <p>В центре плана — Танки Теи и Mystery of Ancient Darkness. Тесты игроков, производственные проверки и реальные продажи определяют расходы на запуск, порты и препродакшен следующей игры.</p>
-        </article>
-        <article class="investor-card risk reveal">
-          <span class="phase-tag">Размещение</span>
-          <h3>Выбираем базу под задачи студии.</h3>
-          <p>Вьетнам — US$2.5M. Гибрид с офисом в Нидерландах — US$3.25M; в США — US$4M. Переезд, найм, визы и применимость льгот проверяются отдельно. Гранты и налоговые скидки в бюджет не заложены.</p>
-        </article>
-      </div>
-
-      <div class="investor-close reveal">
-        <div>
-          <p class="investor-stakes">Миры уже существуют. Теперь создаём компанию, которая будет их развивать.</p>
-          <p>План студии от 16 сентября заменяет прежний сценарий финансирования двух игр. Оценка компании, инструмент, доли и управление обсуждаются индивидуально. Продажи, сроки и доходность не гарантируются.</p>
-        </div>
-        <div class="investor-actions">
-          <a class="button primary" href="studio-seed-2026-09-16.pdf" target="_blank" rel="noreferrer">План создания студии · PDF на английском</a>
-          <a class="button ghost" href="mailto:elyssov@gmail.com?subject=%D0%98%D0%BD%D0%B2%D0%B5%D1%81%D1%82%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%80%D0%B0%D0%B7%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%20%E2%80%94%20The%20Misfits%20Software">Начать разговор</a>
-        </div>
-      </div>
-      <p class="investor-legal reveal">Материал только для обсуждения. Не является офертой, обещанием доходности или предложением приобрести ценные бумаги. Средства не будут приниматься до создания подходящего юридического лица, выбора законного способа привлечения, проверки юристом и подписания окончательных документов.</p>
     </section>
 
     <section class="section support" id="support">
       <div class="support-panel reveal">
         <p class="eyebrow">Купить работу / Заправить следующую сборку</p>
-        <h2>Помогите студии встать на ноги.</h2>
-        <p>Покупая нашу игру, вы получаете то, во что можно играть уже сейчас, и оплачиваете арт, звук, тестирование, локализацию и время на следующий релиз. А если хочется просто плеснуть топлива в огонь — прямая поддержка тоже очень кстати.</p>
+        <h2>Помоги студии встать на ноги.</h2>
+        <p>Покупая нашу игру, ты получаешь то, во что можно играть уже сейчас, и оплачиваешь арт, звук, тестирование, локализацию и время на следующий релиз. А если хочется просто плеснуть топлива в огонь — прямая поддержка тоже очень кстати.</p>
         <div class="support-actions">
-          <a class="button primary" href="https://themisfitssoftware.itch.io/" target="_blank" rel="noreferrer">Купить наши игры на itch.io</a>
+          <a class="button primary" href="https://themisfitssoftware.itch.io/" target="_blank" rel="noreferrer">Наши игры на itch.io</a>
           <a class="button ghost" href="https://paypal.me/EVGENIILISOVSKII" target="_blank" rel="noreferrer">Поддержать напрямую через PayPal</a>
           <a class="button ghost" href="https://www.patreon.com/c/misfitssoftware" target="_blank" rel="noreferrer">Подписаться на Patreon</a>
-        </div>
-        <div class="support-note">
-          <span>Уже можно играть:</span> Dig for Home, RURK и The Pixel Campfire выпущены как коммерческие продукты. Mystery of Ancient Darkness и Танки Теи доступны как публичные пре-альфы — их можно проверить до решения, заслуживает ли наша мастерская ещё топлива.
         </div>
       </div>
     </section>
@@ -393,7 +319,7 @@
     <section class="section signal">
       <div class="signal-grid reveal">
         <div>
-          <div class="section-kicker">09 / Следить за сигналом</div>
+          <div class="section-kicker">Следить за сигналом</div>
           <h2>Разработка публично.<br>Включая всё некрасивое.</h2>
         </div>
         <div class="signal-links">
@@ -408,13 +334,25 @@
     </section>
   </main>
 
+  <dialog class="lightbox" aria-label="Просмотр изображения">
+    <img src="" alt="">
+    <div class="lightbox-bar">
+      <span class="lightbox-caption"></span>
+      <span>
+        <button type="button" data-prev aria-label="Предыдущее изображение">←</button>
+        <button type="button" data-next aria-label="Следующее изображение">→</button>
+        <button type="button" data-close>Закрыть</button>
+      </span>
+    </div>
+  </dialog>
+
   <footer>
     <div class="footer-brand">
       <img src="studio-avatar.png" alt="">
       <span>The Misfits Software</span>
     </div>
     <p>Игры делают для людей. Пусть они будут опасными, красивыми, смешными, страшными и живыми.</p>
-    <small>© <span id="year"></span> The Misfits Software. Сделано человеком и людьми в машине.</small>
+    <small>© <span id="year">2026</span> The Misfits Software. Сделано человеком и людьми в машине.</small>
   </footer>
 
   <script src="script.js"></script>

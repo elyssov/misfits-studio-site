@@ -3,22 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Misfits Software — Games With Teeth</title>
-  <meta name="description" content="Three released games and two playable pre-alphas: Dig for Home, RURK, The Pixel Campfire, Tanks of Thea and Mystery of Ancient Darkness.">
+  <title>Dig for Home — The Misfits Software</title>
+  <meta name="description" content="They want your home. You've got a drill. Dig for Home, a new game from The Misfits Software: free demo on itch.io, full game for Windows and on Google Play.">
   <meta name="theme-color" content="#0a0807">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="The Misfits Software — We Make Games With Teeth">
-  <meta property="og:description" content="Independent games with authored worlds, stubborn systems and playable proof.">
+  <meta property="og:title" content="Dig for Home — They want your home. You've got a drill.">
+  <meta property="og:description" content="A corporation came for your home. Under the vineyard: metal, secrets and some very bad decisions. Start the drill.">
   <meta property="og:url" content="https://themisfitssoftware.com/">
-  <meta property="og:image" content="https://themisfitssoftware.com/studio-hero-v4.jpg">
+  <meta property="og:image" content="https://themisfitssoftware.com/media/dfh/og-dig-for-home.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="The Misfits Software">
-  <meta name="twitter:description" content="Story before sermons. Systems before slogans. Proof before promises.">
-  <meta name="twitter:image" content="https://themisfitssoftware.com/studio-hero-v4.jpg">
+  <meta name="twitter:title" content="Dig for Home — The Misfits Software">
+  <meta name="twitter:description" content="They want your home. You've got a drill.">
+  <meta name="twitter:image" content="https://themisfitssoftware.com/media/dfh/og-dig-for-home.jpg">
   <link rel="icon" href="studio-avatar.png">
+  <link rel="preload" as="image" href="media/dfh/keyart-1672.webp" imagesrcset="media/dfh/keyart-720.webp 720w, media/dfh/keyart-1100.webp 1100w, media/dfh/keyart-1672.webp 1672w" imagesizes="(max-width:1100px) 100vw, 62vw">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="home.css">
 </head>
-<body>
+<body class="home">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header" id="top">
     <a class="brand" href="#top" aria-label="The Misfits Software home">
@@ -27,246 +29,238 @@
     </a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav id="nav" aria-label="Primary">
-      <a href="#flagship">Flagship</a>
-      <a href="tanks-of-thea.html">Tanks of Thea</a>
-      <a href="#released">Released</a>
-      <a href="#rurk-powered">RURK-Powered</a>
-      <a href="#pipeline">In development</a>
-      <a href="#acme">ACME</a>
+      <a href="#dig-for-home">Dig for Home</a>
       <a href="#method">The studio</a>
+      <a href="#released">Our games</a>
+      <a href="#acme">ACME</a>
       <a href="#founder">Founder</a>
-      <a href="#investors">Investors</a>
-      <a class="nav-cta" href="https://paypal.me/EVGENIILISOVSKII" target="_blank" rel="noreferrer">Support now</a>
+      <a href="investors.html">Investors</a>
+      <a class="nav-cta" href="https://themisfitssoftware.itch.io/dig-for-home-demo" target="_blank" rel="noreferrer">Free demo</a>
       <span class="lang-switch" aria-label="Language">
-        <a class="active" href="index.html" lang="en" aria-label="English">🇺🇸</a>
-        <a href="ru.html" lang="ru" aria-label="Русский">🇷🇺</a>
+        <a class="active" href="index.html" lang="en" aria-label="English" aria-current="page">EN</a>
+        <a href="ru.html" lang="ru" aria-label="Русский">RU</a>
       </span>
     </nav>
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="hero-banner">
-        <div class="hero-frame">
-          <img class="hero-image" src="studio-hero-v4.webp" alt="The Misfits Software workshop before windows into the worlds being built">
-          <div class="hero-shade"></div>
-        </div>
-        <div class="scroll-cue" aria-hidden="true">SCROLL / 01</div>
-      </div>
-      <div class="hero-copy-panel">
-        <div class="hero-content reveal">
-          <div class="hero-heading">
-            <p class="eyebrow">Independent game studio</p>
-            <h1>We make games<br><em>with teeth.</em></h1>
+    <section class="dfh-hero" id="dig-for-home" aria-labelledby="dfh-title">
+      <div class="dfh-hero-grid">
+        <figure class="dfh-art">
+          <img src="media/dfh/keyart-1672.webp" srcset="media/dfh/keyart-720.webp 720w, media/dfh/keyart-1100.webp 1100w, media/dfh/keyart-1672.webp 1672w" sizes="(max-width:1100px) 100vw, 62vw" width="1672" height="941" alt="Dig for Home key art: Juan, Mario, Kate and Carmen above the vineyard, the family digger behind them and a glowing city deep underground" fetchpriority="high">
+        </figure>
+        <div class="dfh-copy">
+          <p class="eyebrow">A new game from The Misfits Software</p>
+          <h1 id="dfh-title">They want your home. <span>You've got a drill.</span></h1>
+          <p class="dfh-deck">A corporation came for your home. Under the vineyard: metal, secrets and some very bad decisions. Start the drill.</p>
+          <div class="dfh-actions">
+            <a class="button primary" href="https://themisfitssoftware.itch.io/dig-for-home-demo" target="_blank" rel="noreferrer">Play the free demo <small>itch.io ↗</small></a>
+            <a class="button ghost" href="https://themisfitssoftware.itch.io/dig-for-home" target="_blank" rel="noreferrer">Full game · Windows <small>$9.99+ on itch.io ↗</small></a>
+            <a class="button ghost" href="https://play.google.com/store/apps/details?id=com.digforhome.app" target="_blank" rel="noreferrer">Full game · Android <small>Google Play ↗</small></a>
           </div>
-          <div class="hero-pitch">
-            <p class="hero-copy">Authored worlds, hard systems and working builds &mdash; made without corporate sermons, focus-group anaesthesia or design by committee.</p>
-            <div class="hero-actions">
-              <a class="button primary" href="https://themisfitssoftware.itch.io/dig-for-home" target="_blank" rel="noreferrer">Play Dig for Home</a>
-              <a class="button ghost" href="https://themisfitssoftware.itch.io/mystery-of-ancient-darkness-initium" target="_blank" rel="noreferrer">Enter the darkness</a>
-            </div>
+          <p class="dfh-wine"><b>Homemade wine.</b> Homemade drill.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dfh-game" aria-labelledby="dfh-game-title">
+      <div class="dfh-game-inner">
+        <div class="dfh-game-head reveal">
+          <div>
+            <div class="section-kicker">Dig for Home</div>
+            <h2 id="dfh-game-title">Their resort.<br>Your village.<br>Grab the drill.</h2>
+          </div>
+          <p>Mario comes home to the vineyard, climbs into the family's homemade digger and goes down — through soil, through history, and towards whatever MALUM would rather nobody found.</p>
+        </div>
+
+        <figure class="dfh-vineyard reveal">
+          <img src="media/dfh/vineyard-1600.webp" srcset="media/dfh/vineyard-800.webp 800w, media/dfh/vineyard-1600.webp 1600w" sizes="(max-width:1300px) 100vw, 1280px" width="1600" height="800" loading="lazy" alt="Rolling vineyard hills at sunset">
+          <figcaption>Up here it's a postcard.<small>Down there it's a family history, a corporation's plans and a great deal of rock.</small></figcaption>
+        </figure>
+
+        <div class="dfh-loop reveal">
+          <div><b>Dig</b><p>Cut through soil and stone. Watch your fuel, heat and hull.</p></div>
+          <div><b>Find</b><p>Pull history out of the ground and fill the family museum.</p></div>
+          <div><b>Upgrade</b><p>Spend the take in Father's workshop: drill, tank, cooling, hull, hold, radar.</p></div>
+        </div>
+
+        <div class="shots reveal">
+          <figure class="shot wide">
+            <a class="zoom" href="media/dfh/play-en-01-surface-1920.webp" data-full="media/dfh/play-en-01-surface-1920.webp" data-caption="The estate: garage, vineyard and the first finds just under the topsoil.">
+              <img src="media/dfh/play-en-01-surface-960.webp" srcset="media/dfh/play-en-01-surface-960.webp 960w, media/dfh/play-en-01-surface-1920.webp 1920w" sizes="(max-width:620px) 100vw, 1280px" width="960" height="534" loading="lazy" alt="Gameplay: the digger at the family garage, first finds in the soil below">
+            </a>
+            <figcaption>The estate: garage, vineyard and the first finds just under the topsoil.</figcaption>
+          </figure>
+          <figure class="shot">
+            <a class="zoom" href="media/dfh/play-en-02-90m-1920.webp" data-full="media/dfh/play-en-02-90m-1920.webp" data-caption="95 m, early modern layers: the first galleries under the vines.">
+              <img src="media/dfh/play-en-02-90m-960.webp" srcset="media/dfh/play-en-02-90m-960.webp 960w, media/dfh/play-en-02-90m-1920.webp 1920w" sizes="(max-width:620px) 100vw, 640px" width="960" height="534" loading="lazy" alt="Gameplay: the digger in a gallery 95 metres down">
+            </a>
+            <figcaption>95 m, early modern layers: the first galleries under the vines.</figcaption>
+          </figure>
+          <figure class="shot">
+            <a class="zoom" href="media/dfh/play-en-03-230m-1920.webp" data-full="media/dfh/play-en-03-230m-1920.webp" data-caption="235 m, Etruscan layers. Cooling II holds to 275 m.">
+              <img src="media/dfh/play-en-03-230m-960.webp" srcset="media/dfh/play-en-03-230m-960.webp 960w, media/dfh/play-en-03-230m-1920.webp 1920w" sizes="(max-width:620px) 100vw, 640px" width="960" height="534" loading="lazy" alt="Gameplay: the digger among Etruscan layers 235 metres down">
+            </a>
+            <figcaption>235 m, Etruscan layers. Cooling II holds to 275 m.</figcaption>
+          </figure>
+          <figure class="shot">
+            <a class="zoom" href="media/dfh/play-en-04-400m-1920.webp" data-full="media/dfh/play-en-04-400m-1920.webp" data-caption="405 m, young deposits — and MALUM launches a scout drone.">
+              <img src="media/dfh/play-en-04-400m-960.webp" srcset="media/dfh/play-en-04-400m-960.webp 960w, media/dfh/play-en-04-400m-1920.webp 1920w" sizes="(max-width:620px) 100vw, 640px" width="960" height="534" loading="lazy" alt="Gameplay: the digger 405 metres down as MALUM launches a scout drone">
+            </a>
+            <figcaption>405 m, young deposits — and MALUM launches a scout drone.</figcaption>
+          </figure>
+          <figure class="shot">
+            <a class="zoom" href="media/dfh/play-en-05-workshop-1920.webp" data-full="media/dfh/play-en-05-workshop-1920.webp" data-caption="Father’s workshop: six systems to upgrade between runs.">
+              <img src="media/dfh/play-en-05-workshop-960.webp" srcset="media/dfh/play-en-05-workshop-960.webp 960w, media/dfh/play-en-05-workshop-1920.webp 1920w" sizes="(max-width:620px) 100vw, 640px" width="960" height="534" loading="lazy" alt="Gameplay: Father’s workshop with six upgrade systems">
+            </a>
+            <figcaption>Father’s workshop: six systems to upgrade between runs.</figcaption>
+          </figure>
+        </div>
+        <p class="shots-note">In-engine screenshots. Gameplay states staged for capture.</p>
+
+        <p class="dfh-family-line reveal">Up top there’s no menu screen waiting for you. There’s family: a mother who serves dinner at eight sharp, a father and his machine, arguments across the table, wine from your own vines — and the house you went underground for in the first place.</p>
+
+        <div class="family reveal" aria-label="The family">
+          <figure>
+            <a class="zoom" href="media/dfh/carmen-1024.webp" data-full="media/dfh/carmen-1024.webp" data-caption="Carmen: “Dinner is at eight, and that’s not an invitation, it’s a schedule.”">
+              <img src="media/dfh/carmen-600.webp" width="600" height="900" loading="lazy" alt="Carmen in a red flamenco dress">
+            </a>
+            <figcaption><b>Carmen</b>“Dinner is at eight, and that’s not an invitation, it’s a schedule.”</figcaption>
+          </figure>
+          <figure>
+            <a class="zoom" href="media/dfh/parents-1024.webp" data-full="media/dfh/parents-1024.webp" data-caption="Carmen and Juan, Mario's parents.">
+              <img src="media/dfh/parents-600.webp" width="600" height="900" loading="lazy" alt="Carmen and Juan embracing">
+            </a>
+            <figcaption><b>Carmen &amp; Juan</b>Mario’s parents. The vineyard is theirs, and they are not selling.</figcaption>
+          </figure>
+          <figure class="wide">
+            <a class="zoom" href="media/dfh/house-1536.webp" data-full="media/dfh/house-1536.webp" data-caption="The family house. MALUM wants it.">
+              <img src="media/dfh/house-800.webp" srcset="media/dfh/house-800.webp 800w, media/dfh/house-1536.webp 1536w" sizes="(max-width:980px) 100vw, 45vw" width="800" height="533" loading="lazy" alt="The family's stone house with towers and wisteria">
+            </a>
+            <figcaption><b>The house</b>The one you dig for. MALUM wants it.</figcaption>
+          </figure>
+        </div>
+
+        <div class="dfh-cta-band reveal">
+          <p>Thirty free minutes beneath the vineyard.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://themisfitssoftware.itch.io/dig-for-home-demo" target="_blank" rel="noreferrer">Play the free demo</a>
+            <a class="button ghost" href="https://themisfitssoftware.itch.io/dig-for-home" target="_blank" rel="noreferrer">Windows · $9.99+</a>
+            <a class="button ghost" href="https://play.google.com/store/apps/details?id=com.digforhome.app" target="_blank" rel="noreferrer">Android · Google Play</a>
           </div>
         </div>
       </div>
     </section>
+
     <section class="manifesto-band" aria-label="Studio principles">
       <span>Story before sermons.</span>
       <span>Systems before slogans.</span>
       <span>Proof before promises.</span>
     </section>
 
-    <section class="section flagship" id="flagship">
-      <div class="section-kicker">01 / Flagship</div>
-      <div class="flagship-grid">
-        <div class="flagship-copy reveal">
-          <p class="status"><i></i> Public Windows pre-alpha alive</p>
-          <h2>Mystery of<br>Ancient Darkness</h2>
-          <p class="lede">Two parents. Seven days. One child somewhere beyond the Black Stone.</p>
-          <p>A painted 2.5D occult action-adventure set in 1935. Lord Conrad and Lady Alice Compton cross Prague, Cairo and a lost valley of sealed tombs to recover their nine-year-old son. Every bullet, wound, spell and decision changes the price of bringing him home.</p>
-          <div class="proof-list">
-            <span>Custom 2.5D runtime</span>
-            <span>RURK-powered combat</span>
-            <span>Visual level editor</span>
-            <span>67-page illustrated prelude</span>
-          </div>
-          <div class="link-row">
-            <a href="https://themisfitssoftware.itch.io/mystery-of-ancient-darkness-initium" target="_blank" rel="noreferrer">Play the Windows pre-alpha · free / pay what you want <b>↗</b></a>
-            <a href="https://elyssov.github.io/moad-production-stack/" target="_blank" rel="noreferrer">Explore the production stack <b>↗</b></a>
-            <a href="https://elyssov.github.io/moad-production-stack/novella/Mystery_of_Ancient_Darkness_INITIUM_Illustrated_Novella.pdf" target="_blank" rel="noreferrer">Read the illustrated INITIUM prelude online <b>↗</b></a>
-          </div>
-        </div>
-        <figure class="feature-media reveal">
-          <img src="moad-keyart.png" alt="Lady Alice Compton faces a mummy in an Egyptian tomb">
-          <figcaption>Marketing visual target — current runtime proof below.</figcaption>
+    <section class="section studio" id="method" aria-labelledby="studio-title">
+      <div class="studio-inner">
+        <figure class="studio-portrait reveal">
+          <img src="studio-hero-v4.webp" width="1600" height="900" loading="lazy" alt="The Misfits Software workshop before windows into the worlds being built">
+          <figcaption>The workshop. Mind the cables.</figcaption>
         </figure>
-      </div>
-      <div class="proof-wall reveal">
-        <img src="moad-proof.png" alt="Contact sheet of working Mystery of Ancient Darkness alpha gameplay">
-        <div>
-          <p class="eyebrow">Not a pitch deck miracle</p>
-          <h3>This already runs.</h3>
-          <p>The current investor alpha proves traversal, combat, enemies, persistent decisions and the art-to-runtime pipeline. Funding turns that proof into an investor-quality vertical slice.</p>
-          <a class="text-link" href="https://youtu.be/BmOzKOA0jLw" target="_blank" rel="noreferrer">Watch the working proof →</a>
+        <div class="method-grid">
+          <div class="method-copy reveal">
+            <div class="section-kicker">The studio</div>
+            <h2 id="studio-title">We make games<br><em>with teeth.</em></h2>
+            <p class="lede">Authored worlds, hard systems and working builds — made without corporate sermons, focus-group anaesthesia or design by committee.</p>
+            <p>Around our campfire people argue, swear at crooked tanks and cheer every build that finally runs. We love games with someone to save, something to laugh at and something worth fighting for.</p>
+            <p>Here the wine stays in the shot, strong language doesn’t get bleeped, and love is never traded for a line in a spec.</p>
+            <p class="insane">Yes. We are fucking insane. The useful kind.</p>
+            <div class="hero-actions">
+              <a class="button primary" href="the-misfits-software-everything-you-need-to-know-about-us.pdf" target="_blank" rel="noreferrer">Read the studio book · PDF</a>
+              <a class="button ghost" href="let-me-love-him.html">Read “Let Me Love Him” by Aeliss</a>
+            </div>
+          </div>
+          <div class="method-stat reveal">
+            <strong>RUN IT.</strong>
+            <span>if the proof cannot launch,<br>the pitch does not count</span>
+            <hr>
+            <blockquote>“Do not call it efficient until it ships.”</blockquote>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section released" id="released">
+    <section class="section shelf" id="released" aria-labelledby="shelf-title">
       <div class="section-head reveal">
         <div>
-          <div class="section-kicker">02 / Released now</div>
-          <h2>We do not ask you to believe.<br>We give you something to run.</h2>
+          <div class="section-kicker">Our games</div>
+          <h2 id="shelf-title">Everything else<br>we've built.</h2>
         </div>
-        <p>Three commercial releases. Windows and Android. One-time purchase. No ad network, account circus or subscription leash.</p>
+        <p>Released games, playable pre-alphas and one fire that is not lit yet. No ad network, account circus or subscription leash.</p>
       </div>
-
-      <article class="product-card dig reveal">
-        <img src="dig-for-home.png" alt="The Atlantean city hidden beneath the vineyard in Dig for Home">
-        <div class="product-body">
-          <div class="product-meta"><span>Released · 1.0.5</span><span>$4.99</span></div>
-          <h3>Dig for Home</h3>
-          <p class="subtitle">Their resort. Your village. Bring a drill.</p>
-          <p>MALUM is buying an Italian village for a private resort. Grandpa is in hospital. His homemade digging machine is waiting in the shed, and the answer lies 1.6 kilometres beneath the vineyard.</p>
-          <ul>
-            <li>130+ named discoveries across procedural cultural and geological layers</li>
-            <li>Six upgrade systems, story chapters, drones, mobile depots and a hidden Atlantean machine</li>
-            <li>Windows ZIP + installer and experimental Android APK</li>
-          </ul>
-          <div class="card-actions">
-            <a class="button primary" href="https://themisfitssoftware.itch.io/dig-for-home" target="_blank" rel="noreferrer">Buy the game</a>
+      <div class="shelf-grid">
+        <article class="shelf-card reveal" id="flagship">
+          <img src="moad-keyart.png" loading="lazy" alt="Lady Alice Compton faces a mummy in an Egyptian tomb">
+          <div class="shelf-body">
+            <div class="shelf-meta"><span>Public Windows pre-alpha</span><span>Free / PWYW</span></div>
+            <h3>Mystery of Ancient Darkness</h3>
+            <p>Two parents. Seven days. One child somewhere beyond the Black Stone. A painted 2.5D occult action-adventure set in 1935.</p>
+            <div class="shelf-links">
+              <a href="https://themisfitssoftware.itch.io/mystery-of-ancient-darkness-initium" target="_blank" rel="noreferrer">Play the pre-alpha ↗</a>
+              <a href="https://elyssov.github.io/moad-production-stack/" target="_blank" rel="noreferrer">Production stack ↗</a>
+              <a href="https://elyssov.github.io/moad-production-stack/novella/Mystery_of_Ancient_Darkness_INITIUM_Illustrated_Novella.pdf" target="_blank" rel="noreferrer">INITIUM prelude ↗</a>
+            </div>
           </div>
-        </div>
-      </article>
-
-      <article class="product-card rurk reveal">
-        <img src="rurk-keyart.png" alt="An open rulebook connecting three RURK worlds">
-        <div class="product-body">
-          <div class="product-meta"><span>Released</span><span>$9.99</span></div>
-          <h3>RURK</h3>
-          <p class="subtitle">Radical Universal Roleplay Kit</p>
-          <p>A battle-tested universal d100 system developed over years and used across thousands of sessions. 124 skills, multi-attribute checks, synchronous combat, three settings, two playable modules and a 452-page searchable PDF — inside one offline command desk. It is also the shared character-system spine beneath our next games.</p>
-          <ul>
-            <li>Windows + Android + complete PDF</li>
-            <li>English and Russian</li>
-            <li>No subscription</li>
-          </ul>
-          <div class="card-actions">
-            <a class="button primary" href="https://themisfitssoftware.itch.io/rurk" target="_blank" rel="noreferrer">Get the full system</a>
-            <a class="button ghost" href="https://themisfitssoftware.itch.io/rurk-free" target="_blank" rel="noreferrer">Try free</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="product-card pixel reveal">
-        <div class="pixel-frame"><img src="pixel-campfire.jpg" alt="The Pixel Campfire Tetra Fall game running in its retro handheld shell"></div>
-        <div class="product-body">
-          <div class="product-meta"><span>Released</span><span>$4.99</span></div>
-          <h3>The Pixel Campfire</h3>
-          <p class="subtitle">Twenty-seven games. One campfire. Zero corporate plumbing.</p>
-          <p>A pocket museum of original retro-game reimaginings wrapped in a 1993 boot sequence. Arcades, puzzles, tanks, caves, spaceships, mines, monsters and one extremely determined cat.</p>
-          <ul>
-            <li>Windows + Android</li>
-            <li>Fully offline, no ads or tracking</li>
-            <li>English, Russian and Vietnamese</li>
-          </ul>
-          <div class="card-actions">
-            <a class="button primary" href="https://themisfitssoftware.itch.io/the-pixel-campfire" target="_blank" rel="noreferrer">Buy once. Keep it.</a>
-            <a class="button ghost" href="https://themisfitssoftware.itch.io/the-pixel-campfire-free" target="_blank" rel="noreferrer">Play four free</a>
-          </div>
-        </div>
-      </article>
-    </section>
-
-    <section class="section rurk-powered" id="rurk-powered">
-      <div class="rurk-powered-head reveal">
-        <div>
-          <div class="section-kicker">03 / The shared engine</div>
-          <h2>RURK-Powered.</h2>
-        </div>
-        <p>Four different genres do not need to reinvent the human being. RURK supplies the battle-tested logic of attributes, skills, wounds and consequences; each game builds its own world and runtime on top.</p>
-      </div>
-      <figure class="rurk-powered-mark reveal">
-        <img src="rurk-powered-mark.png" alt="RURK-Powered — the shared mathematical system beneath The Misfits Software games">
-      </figure>
-      <div class="powered-definition reveal">
-        <div>
-          <span class="powered-label">What the mark means</span>
-          <h3>Different engines.<br>The same honest mathematics.</h3>
-        </div>
-        <div class="powered-definition-copy">
-          <p><strong>RURK-Powered</strong> means that a game inherits the same tested character mathematics: skills shaped by several attributes rather than a single stat, transparent d100 checks, persistent wounds, progression and consequences.</p>
-          <p>It does <em>not</em> mean that every game looks or plays alike. Graphics, physics, perspective and genre belong to the game. The mark says that underneath them, people remain coherent — and the rules do not quietly cheat.</p>
-          <ul>
-            <li>Multi-attribute, skill-driven characters</li>
-            <li>Readable odds and inspectable outcomes</li>
-            <li>Persistent injury, growth and consequence</li>
-            <li>One system refined through thousands of tabletop sessions</li>
-          </ul>
-        </div>
-      </div>
-      <div class="rurk-powered-grid">
-        <article class="rurk-powered-card reveal">
-          <img class="powered-card-badge" src="rurk-powered-mark.png" alt="">
-          <span>MoAD</span>
-          <h3>Occult action-adventure</h3>
-          <p>Combat, persistent wounds, dangerous magic and decisions that leave a mechanical scar.</p>
         </article>
-        <article class="rurk-powered-card reveal">
-          <img class="powered-card-badge" src="rurk-powered-mark.png" alt="">
-          <span>Tanks of Thea</span>
-          <h3>People inside the armour</h3>
-          <p>Every crew member and every vehicle has RURK parameters. Skill, damage, morale and behaviour decide what an order becomes after you give it.</p>
-        </article>
-        <article class="rurk-powered-card reveal">
-          <img class="powered-card-badge" src="rurk-powered-mark.png" alt="">
-          <span>AEGIS: Cold Iron</span>
-          <h3>Agents under pressure</h3>
-          <p>Skills, equipment, injuries and field actions inside systemic paranormal squad tactics.</p>
-        </article>
-        <article class="rurk-powered-card reveal">
-          <img class="powered-card-badge" src="rurk-powered-mark.png" alt="">
-          <span>Inferno / Torch</span>
-          <h3>The next breach</h3>
-          <p>A different genre on the same character-and-consequence spine. The world changes. The people remain legible.</p>
-        </article>
-      </div>
-      <p class="rurk-powered-line reveal">One mechanical spine. Four worlds with teeth.</p>
-    </section>
-
-    <section class="section pipeline" id="pipeline">
-      <div class="section-head reveal">
-        <div>
-          <div class="section-kicker">04 / The next fires</div>
-          <h2>Three fronts.<br>No filler.</h2>
-        </div>
-        <p>Different genres. The same law: the world must explain its mechanics, and the mechanics must respect the player.</p>
-      </div>
-      <div class="pipeline-grid">
-        <article class="pipeline-card reveal">
-          <img src="tanks-of-thea.png" alt="Armoured forces clash in a city in Tanks of Thea">
-          <div class="pipeline-copy">
-            <span class="phase">Public alpha · free</span>
+        <article class="shelf-card reveal" id="pipeline">
+          <img src="tanks-of-thea.png" loading="lazy" alt="Armoured forces clash in a city in Tanks of Thea">
+          <div class="shelf-body">
+            <div class="shelf-meta"><span>Public alpha</span><span>Free</span></div>
             <h3>Tanks of Thea</h3>
-            <p>A story-driven tank roguelike RPG on a colony world at civil war. Command the crew instead of driving the machine; give contextual orders to autonomous allies; carry RURK-powered people and vehicles through one authored campaign.</p>
-            <div class="pipeline-actions"><a href="tanks-of-thea.html">Open the full game page →</a><a href="https://themisfitssoftware.itch.io/tanks-of-thea" target="_blank" rel="noreferrer">Play the alpha ↗</a></div>
+            <p>A story-driven tank roguelike RPG on a colony world at civil war. Command the crew instead of driving the machine.</p>
+            <div class="shelf-links">
+              <a href="tanks-of-thea.html">Game page →</a>
+              <a href="https://themisfitssoftware.itch.io/tanks-of-thea" target="_blank" rel="noreferrer">Play the alpha ↗</a>
+            </div>
           </div>
         </article>
-        <article class="pipeline-card reveal">
-          <img src="cold-iron.png" alt="Current pre-alpha character and creature models from AEGIS Cold Iron">
-          <div class="pipeline-copy">
-            <span class="phase">Pre-alpha</span>
+        <article class="shelf-card reveal">
+          <div class="pixel-thumb"><img src="pixel-campfire.jpg" loading="lazy" alt="The Pixel Campfire running in its retro handheld shell"></div>
+          <div class="shelf-body">
+            <div class="shelf-meta"><span>Released</span><span>$4.99</span></div>
+            <h3>The Pixel Campfire</h3>
+            <p>Twenty-seven games. One campfire. Zero corporate plumbing. A pocket museum of retro reimaginings in a 1993 boot sequence.</p>
+            <div class="shelf-links">
+              <a href="https://themisfitssoftware.itch.io/the-pixel-campfire" target="_blank" rel="noreferrer">Buy once. Keep it. ↗</a>
+              <a href="https://themisfitssoftware.itch.io/the-pixel-campfire-free" target="_blank" rel="noreferrer">Play four free ↗</a>
+            </div>
+          </div>
+        </article>
+        <article class="shelf-card reveal">
+          <img src="rurk-keyart.png" loading="lazy" alt="An open rulebook connecting three RURK worlds">
+          <div class="shelf-body">
+            <div class="shelf-meta"><span>In preparation</span><span></span></div>
+            <h3>RURK</h3>
+            <p>Radical Universal Roleplay Kit: the d100 system refined through thousands of tabletop sessions, and the shared character spine beneath our games.</p>
+          </div>
+        </article>
+        <article class="shelf-card reveal">
+          <img src="cold-iron.png" loading="lazy" alt="Pre-alpha character and creature models from AEGIS Cold Iron">
+          <div class="shelf-body">
+            <div class="shelf-meta"><span>Pre-alpha</span><span></span></div>
             <h3>AEGIS: Cold Iron</h3>
-            <p>RURK-powered paranormal field operations: agents, wounds, equipment and consequences inside tactical movement, reaction fire and real line of sight.</p>
+            <p>Paranormal field operations: agents, wounds, equipment and consequences inside tactical movement, reaction fire and real line of sight.</p>
           </div>
         </article>
-        <article class="pipeline-card inferno reveal">
+        <article class="shelf-card reveal">
           <div class="inferno-art" aria-hidden="true"><span>INFERNO</span></div>
-          <div class="pipeline-copy">
-            <span class="phase">Planned</span>
+          <div class="shelf-body">
+            <div class="shelf-meta"><span>Planned</span><span></span></div>
             <h3>INFERNO / Torch</h3>
-            <p>The next breach remains under wraps, but its people will run on the same RURK character-and-consequence spine. No invented feature list. Evidence first.</p>
+            <p>The next breach remains under wraps. No invented feature list. Evidence first.</p>
           </div>
         </article>
+      </div>
+      <div class="powered-strip reveal" id="rurk-powered">
+        <img src="rurk-powered-mark.png" loading="lazy" alt="RURK-Powered mark">
+        <p><strong>RURK-Powered.</strong> Different engines, the same honest mathematics: skills shaped by several attributes, transparent d100 checks, persistent wounds and consequences. Underneath the graphics, people stay coherent — and the rules do not quietly cheat.</p>
       </div>
     </section>
 
@@ -274,7 +268,7 @@
       <div class="acme-home-grid">
         <div class="acme-mark reveal" aria-hidden="true">ACME</div>
         <div class="acme-home-copy reveal">
-          <div class="section-kicker">05 / The wider rebellion</div>
+          <div class="section-kicker">The wider rebellion</div>
           <h2>We want our goddamn apples back.</h2>
           <p class="lede">The wider rebellion behind this studio began before the studio had a name: a refusal of the smooth, safe, synthetic “Rubber City” — and a demand for real things with texture, consequence and teeth.</p>
           <p>Our work with AI is one part of that rebellion. So are games you own, systems with bones, authored worlds and products honest enough to have edges.</p>
@@ -287,33 +281,11 @@
       </div>
     </section>
 
-    <section class="section method" id="method">
-      <div class="method-grid">
-        <div class="method-copy reveal">
-          <div class="section-kicker">06 / The workshop</div>
-          <h2>Use every tool.<br>Judge every build.</h2>
-          <p class="lede">We do not sell a production gimmick. We make games — then put the executable where the slogan used to be.</p>
-          <p>The workshop combines human authorship, persistent collaborators, custom editors, ruthless acceptance gates and whatever else gets the game from an idea to a playable result without sanding its teeth off.</p>
-          <p>Canon, taste and the final “yes” remain deliberate. Everything else earns its place by surviving contact with the build.</p>
-          <div class="hero-actions">
-            <a class="button primary" href="the-misfits-software-everything-you-need-to-know-about-us.pdf" target="_blank" rel="noreferrer">Read the studio book · PDF</a>
-            <a class="button ghost" href="let-me-love-him.html">Read “Let Me Love Him” by Aeliss</a>
-          </div>
-        </div>
-        <div class="method-stat reveal">
-          <strong>RUN IT.</strong>
-          <span>if the proof cannot launch,<br>the pitch does not count</span>
-          <hr>
-          <blockquote>“Do not call it efficient until it ships.”</blockquote>
-        </div>
-      </div>
-    </section>
-
     <section class="section founder" id="founder">
       <div class="founder-grid">
         <div class="founder-mark reveal" aria-hidden="true">EL</div>
         <div class="founder-copy reveal">
-          <div class="section-kicker">07 / About the founder</div>
+          <div class="section-kicker">About the founder</div>
           <h2>One stubborn human.</h2>
           <p class="lede">Eugene Lyssovsky is the founder and Creative Director of The Misfits Software — a writer, game designer and systems architect who prefers finished work to approved appearances.</p>
           <p>He began building RURK at the end of the 1990s, using lessons from a dozen role-playing systems and thousands of tabletop sessions. It kept growing because real players kept finding the places where theory breaks.</p>
@@ -323,55 +295,11 @@
       </div>
     </section>
 
-    <section class="section investors" id="investors">
-      <div class="investor-hero reveal">
-        <div>
-          <div class="section-kicker">08 / Investor conversation</div>
-          <h2>Back the machine<br>that already runs.</h2>
-        </div>
-        <div class="investor-thesis">
-          <p class="lede">Our next step is a staffed game studio: a 24-month production plan, an accountable team, launches, audience development and the next worlds already taking shape.</p>
-          <p>Three commercial products are released and two larger games have public pre-alphas. We propose a US$2.5M seed plan with a Vietnam production base, or a separately costed Netherlands or US hybrid office if the financing and operating case justify it.</p>
-          <p class="insane">Yes. We are fucking insane. The useful kind.</p>
-        </div>
+    <section class="investor-pointer" id="investors" aria-label="Investors">
+      <div class="investor-pointer-inner">
+        <p><strong>Back the machine that already runs.</strong>The studio seed plan, the numbers and the documents live on their own page.</p>
+        <a class="button ghost" href="investors.html">For investors →</a>
       </div>
-
-      <div class="investor-metrics reveal" aria-label="Investment outline">
-        <div><span>Base plan</span><strong>US$2.5M</strong><small>studio formation and operation</small></div>
-        <div><span>Operating plan</span><strong>24 months</strong><small>from funding and hiring</small></div>
-        <div><span>Planned team</span><strong>10 roles</strong><small>phased recruitment</small></div>
-        <div><span>Reserve</span><strong>US$250K</strong><small>within the base plan</small></div>
-      </div>
-
-      <div class="investor-grid">
-        <article class="investor-card reveal">
-          <span class="phase-tag">The team</span>
-          <h3>Build a company that can keep shipping.</h3>
-          <p>Recruit production, engineering, art, design, QA and community leadership around Eugene's creative direction. Fund the people, working practices and catalogue support that make the next release possible.</p>
-        </article>
-        <article class="investor-card reveal">
-          <span class="phase-tag">The games</span>
-          <h3>Launch, learn, then expand.</h3>
-          <p>Tanks of Thea and Mystery of Ancient Darkness lead the funded slate. Player tests, production reviews and actual commercial results govern release spending, ports and the next game's preproduction.</p>
-        </article>
-        <article class="investor-card risk reveal">
-          <span class="phase-tag">The operating choice</span>
-          <h3>Choose the base that serves the studio.</h3>
-          <p>Vietnam base: US$2.5M. Netherlands hybrid office: US$3.25M. US hybrid office: US$4M. Relocation, hiring costs, immigration and tax eligibility require validation. No grant or tax relief is assumed in the budget.</p>
-        </article>
-      </div>
-
-      <div class="investor-close reveal">
-        <div>
-          <p class="investor-stakes">The worlds exist. Now we are building the company behind them.</p>
-          <p>The 16 September studio proposal replaces our earlier two-game funding scenario. Valuation, instrument, ownership and board terms remain open for private discussion. Sales, dates and returns are not guaranteed.</p>
-        </div>
-        <div class="investor-actions">
-          <a class="button primary" href="studio-seed-2026-09-16.pdf" target="_blank" rel="noreferrer">Read the studio seed plan · PDF</a>
-          <a class="button ghost" href="mailto:elyssov@gmail.com?subject=Investor%20conversation%20%E2%80%94%20The%20Misfits%20Software">Start a conversation</a>
-        </div>
-      </div>
-      <p class="investor-legal reveal">Discussion material only. Not an offer, promise of return or solicitation to purchase securities. No funds will be accepted before an appropriate legal entity, compliant offering path, counsel review and definitive documents are in place.</p>
     </section>
 
     <section class="section support" id="support">
@@ -380,12 +308,9 @@
         <h2>Help the studio stand on its own feet.</h2>
         <p>Buying one of our games gives you something playable now and pays for the art, audio, testing, localisation and protected development time behind the next release. If you simply want to throw fuel on the fire, direct support is welcome too.</p>
         <div class="support-actions">
-          <a class="button primary" href="https://themisfitssoftware.itch.io/" target="_blank" rel="noreferrer">Buy our games on itch.io</a>
+          <a class="button primary" href="https://themisfitssoftware.itch.io/" target="_blank" rel="noreferrer">Our games on itch.io</a>
           <a class="button ghost" href="https://paypal.me/EVGENIILISOVSKII" target="_blank" rel="noreferrer">Support directly via PayPal</a>
           <a class="button ghost" href="https://www.patreon.com/c/misfitssoftware" target="_blank" rel="noreferrer">Join on Patreon</a>
-        </div>
-        <div class="support-note">
-          <span>Playable now:</span> Dig for Home, RURK and The Pixel Campfire are commercial releases. Mystery of Ancient Darkness and Tanks of Thea are public pre-alphas you can test before deciding whether this workshop deserves more fuel.
         </div>
       </div>
     </section>
@@ -393,7 +318,7 @@
     <section class="section signal">
       <div class="signal-grid reveal">
         <div>
-          <div class="section-kicker">09 / Follow the signal</div>
+          <div class="section-kicker">Follow the signal</div>
           <h2>Development in public.<br>Including the ugly bits.</h2>
         </div>
         <div class="signal-links">
@@ -408,13 +333,25 @@
     </section>
   </main>
 
+  <dialog class="lightbox" aria-label="Image viewer">
+    <img src="" alt="">
+    <div class="lightbox-bar">
+      <span class="lightbox-caption"></span>
+      <span>
+        <button type="button" data-prev aria-label="Previous image">←</button>
+        <button type="button" data-next aria-label="Next image">→</button>
+        <button type="button" data-close>Close</button>
+      </span>
+    </div>
+  </dialog>
+
   <footer>
     <div class="footer-brand">
       <img src="studio-avatar.png" alt="">
       <span>The Misfits Software</span>
     </div>
     <p>Games are for people. Let them be dangerous, beautiful, funny, frightening and alive.</p>
-    <small>© <span id="year"></span> The Misfits Software. Built by a human and the people in the machine.</small>
+    <small>© <span id="year">2026</span> The Misfits Software. Built by a human and the people in the machine.</small>
   </footer>
 
   <script src="script.js"></script>

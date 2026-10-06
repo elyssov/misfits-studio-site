@@ -1,0 +1,195 @@
+/* Home 2026-10: Dig for Home first, then the studio. Loaded after styles.css. */
+
+:root{--wine:#7b1f2b;--vine:#7d8b3a;--sky:#f3b765}
+
+.home .site-header{position:fixed;background:linear-gradient(#050505f2,#050505b8);backdrop-filter:blur(6px)}
+.home nav a[aria-current="page"]{color:var(--gold2)}
+:focus-visible{outline:2px solid var(--gold2);outline-offset:3px}
+
+/* ---------- Hero: the game ---------- */
+.dfh-hero{position:relative;padding-top:78px;background:radial-gradient(circle at 25% 30%,#3a2412 0,#120c07 45%,#080706 75%);border-bottom:1px solid var(--line);overflow:hidden}
+.dfh-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,#080706 100%);pointer-events:none}
+.dfh-hero-grid{position:relative;z-index:1;width:min(1600px,100%);margin:0 auto;display:grid;grid-template-columns:minmax(0,1.55fr) minmax(360px,.9fr);align-items:center;gap:clamp(1.5rem,3.5vw,4rem);padding:clamp(1.2rem,3vw,3rem) clamp(1.2rem,4vw,4.5rem) clamp(2.5rem,5vw,5rem)}
+.dfh-art{margin:0;position:relative;border:1px solid var(--line);background:#0b0806;box-shadow:0 30px 80px #000c}
+.dfh-art img{width:100%;height:auto;aspect-ratio:1672/941;object-fit:contain}
+.dfh-art figcaption{position:absolute;left:.8rem;bottom:.7rem;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:#e8dcc4cc;text-shadow:0 1px 3px #000}
+.dfh-copy .eyebrow{display:flex;align-items:center;gap:.6rem}
+.dfh-copy .eyebrow:before{content:"";width:28px;height:1px;background:var(--gold2)}
+.dfh-copy h1{font:700 clamp(2.4rem,4.4vw,4.6rem)/.98 Cinzel,serif;letter-spacing:-.035em;margin:.9rem 0 1.2rem;text-transform:none}
+.dfh-copy h1 span{display:block;color:var(--gold2)}
+.dfh-deck{font:500 clamp(1.08rem,1.5vw,1.35rem)/1.5 Georgia,serif;color:#f1e3c6;max-width:34ch;margin:0}
+.dfh-actions{display:grid;gap:.75rem;margin-top:2rem;max-width:460px}
+.dfh-actions .button{justify-content:space-between;min-height:58px;font-size:.78rem}
+.dfh-actions .button small{font-size:.66rem;letter-spacing:.08em;opacity:.85;text-transform:none;font-weight:700}
+.button.soon{border-style:dashed;background:transparent;color:#cbbca4;cursor:default}
+.button.soon:hover{transform:none;box-shadow:none}
+.dfh-wine{margin:1.6rem 0 0;font:italic 1rem/1.4 Georgia,serif;color:var(--muted)}
+.dfh-wine b{color:#d9a0a7;font-weight:600}
+
+/* ---------- The game ---------- */
+.dfh-game{max-width:none;background:linear-gradient(180deg,#080706,#0f0b07 40%,#080706)}
+.dfh-game-inner{width:min(var(--max),100%);margin:auto}
+.dfh-game-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,.8fr);gap:clamp(2rem,6vw,6rem);align-items:end}
+.dfh-game-head h2{margin-bottom:0}
+.dfh-game-head p{color:#c1b49f;font-size:clamp(1rem,1.4vw,1.18rem);margin:0}
+.dfh-vineyard{margin:clamp(2.5rem,5vw,4rem) 0 0;position:relative;border:1px solid var(--line)}
+.dfh-vineyard img{width:100%;aspect-ratio:2/1;object-fit:cover}
+.dfh-vineyard figcaption{position:absolute;inset:auto 0 0 0;padding:clamp(1.2rem,3vw,2.6rem);background:linear-gradient(transparent,#080706f0);font:600 clamp(1.4rem,3.2vw,3rem)/1.05 Cinzel,serif;color:var(--paper)}
+.dfh-vineyard figcaption small{display:block;margin-top:.7rem;font:400 clamp(.9rem,1.2vw,1.05rem)/1.5 Inter,Segoe UI,Arial,sans-serif;color:#d6c8b0;max-width:60ch}
+.dfh-loop{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;margin-top:2rem;background:var(--line);border:1px solid var(--line)}
+.dfh-loop div{background:#0d0a08;padding:clamp(1.2rem,2.4vw,2rem)}
+.dfh-loop b{display:block;font:600 clamp(1.3rem,2vw,1.9rem)/1.1 Cinzel,serif;color:var(--gold2);margin-bottom:.5rem}
+.dfh-loop p{margin:0;color:#b9ad99}
+
+.shots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin-top:2.5rem}
+.shot{margin:0;border:1px solid var(--line);background:#0f0d0b}
+.zoom{display:block;cursor:zoom-in;height:100%}
+.shot img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.shot figcaption{padding:.7rem .9rem;font-size:.82rem;color:#c9bca6}
+.preview-note{display:inline-block;margin-left:.4rem;padding:.08rem .45rem;border:1px solid #c9974566;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2)}
+
+.family{display:grid;grid-template-columns:1fr 1fr 1.4fr;gap:1rem;margin-top:clamp(3rem,6vw,5rem);align-items:stretch}
+.family figure{margin:0;border:1px solid var(--line);background:radial-gradient(circle at 50% 40%,#2a1a10,#080706 70%);display:flex;flex-direction:column}
+.family img{width:100%;height:100%;max-height:560px;object-fit:contain}
+.family figure.wide img{object-fit:cover}
+.family figcaption{padding:.75rem .9rem;font-size:.82rem;color:#c9bca6;border-top:1px solid var(--line)}
+.family figcaption b{display:block;font:600 1.05rem/1.2 Cinzel,serif;color:var(--paper)}
+.dfh-cta-band{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.2rem;margin-top:clamp(2.5rem,5vw,4rem);padding:clamp(1.3rem,3vw,2.2rem);border:1px solid var(--gold);background:linear-gradient(110deg,#1a1109,#0b0907)}
+.dfh-cta-band p{margin:0;font:600 clamp(1.2rem,2.2vw,1.9rem)/1.2 Cinzel,serif}
+.dfh-cta-band .hero-actions{margin-top:0}
+
+/* ---------- Studio ---------- */
+.studio{max-width:none;border-top:1px solid var(--line);background:linear-gradient(125deg,#110d08,#080706 55%)}
+.studio-inner{width:min(var(--max),100%);margin:auto}
+.studio-portrait{margin:0 0 clamp(2.5rem,5vw,4rem);border:1px solid var(--line)}
+.studio-portrait img{width:100%;height:auto}
+.studio-portrait figcaption{padding:.65rem .9rem;font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.studio h2 em{font-style:normal;color:transparent;-webkit-text-stroke:1px var(--gold2)}
+.studio .insane{margin:2rem 0 0;color:var(--gold2);font:600 clamp(1.15rem,1.8vw,1.7rem)/1.35 Cinzel,serif;text-transform:uppercase}
+
+/* ---------- Catalogue ---------- */
+.shelf{border-top:1px solid var(--line)}
+.shelf-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2rem}
+.shelf-card{display:flex;flex-direction:column;border:1px solid var(--line);background:#0f0d0b;overflow:hidden}
+.shelf-card>img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.shelf-card .pixel-thumb{aspect-ratio:16/10;display:grid;place-items:center;background:radial-gradient(circle at 50%,#5e573c,#18150f 70%)}
+.shelf-card .pixel-thumb img{height:88%;width:auto}
+.shelf-card .inferno-art{aspect-ratio:16/10}
+.shelf-body{padding:1.35rem 1.4rem 1.5rem;display:flex;flex-direction:column;gap:.55rem;flex:1}
+.shelf-body h3{font-size:clamp(1.45rem,2vw,2.1rem)!important;margin:0!important}
+.shelf-body p{margin:0;color:#ad9f8a;font-size:.93rem}
+.shelf-meta{display:flex;justify-content:space-between;gap:1rem;text-transform:uppercase;letter-spacing:.16em;font-size:.6rem;color:var(--gold2)}
+.shelf-links{margin-top:auto;padding-top:.6rem;display:flex;flex-wrap:wrap;gap:.4rem 1.1rem}
+.shelf-links a{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;text-decoration:none;color:var(--gold2)}
+.shelf-links a:hover,.shelf-links a:focus{color:var(--paper)}
+.powered-strip{display:grid;grid-template-columns:auto 1fr;gap:clamp(1.2rem,3vw,2.5rem);align-items:center;margin-top:2rem;padding:clamp(1.2rem,2.5vw,2rem);border:1px solid var(--line);background:linear-gradient(90deg,rgba(201,151,69,.08),transparent)}
+.powered-strip img{width:min(260px,40vw);height:auto}
+.powered-strip p{margin:0;color:#c4b7a2}
+.powered-strip strong{color:var(--paper)}
+
+/* ---------- Investors pointer ---------- */
+.investor-pointer{max-width:none;border-block:1px solid var(--line);background:linear-gradient(135deg,#0a0807,#171008 60%,#090706);padding-block:clamp(2.5rem,5vw,4rem)}
+.investor-pointer-inner{width:min(var(--max),100%);margin:auto;display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;justify-content:space-between}
+.investor-pointer p{margin:0;max-width:62ch;color:#bcae98}
+.investor-pointer strong{display:block;font:600 clamp(1.3rem,2.4vw,2.2rem)/1.15 Cinzel,serif;color:var(--paper);margin-bottom:.4rem}
+
+/* ---------- Lightbox ---------- */
+.lightbox{padding:0;border:1px solid var(--gold);background:#050403;max-width:min(96vw,1700px);max-height:94vh;color:var(--paper)}
+.lightbox::backdrop{background:#000d}
+.lightbox img{max-width:min(96vw,1700px);max-height:calc(94vh - 3.2rem);width:auto;height:auto;margin:auto}
+.lightbox-bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.55rem .8rem;border-top:1px solid var(--line);font-size:.8rem}
+.lightbox-bar button{background:none;border:1px solid var(--line);color:var(--paper);padding:.35rem .7rem;cursor:pointer;font:inherit}
+.lightbox-bar button:hover,.lightbox-bar button:focus{border-color:var(--gold2);color:var(--gold2)}
+
+/* ---------- Tablet ---------- */
+@media (max-width:1100px){
+ .dfh-hero-grid{grid-template-columns:1fr}
+ .dfh-copy{max-width:760px}
+ .dfh-deck{max-width:none}
+ .dfh-actions{grid-template-columns:1fr 1fr;max-width:none}
+ .dfh-actions .soon{grid-column:1/-1}
+}
+@media (max-width:980px){
+ .home .dfh-hero{padding-top:68px}
+ .dfh-game-head{grid-template-columns:1fr}
+ .shelf-grid{grid-template-columns:1fr 1fr}
+ .family{grid-template-columns:1fr 1fr}
+ .family figure.wide{grid-column:1/-1}
+}
+/* ---------- Phone: its own layout ---------- */
+@media (max-width:620px){
+ .dfh-hero-grid{padding:0 0 2.4rem;gap:0}
+ .dfh-art{border-inline:0;box-shadow:none}
+ .dfh-art figcaption{display:none}
+ .dfh-copy{padding:1.6rem 1.15rem 0}
+ .dfh-copy h1{font-size:clamp(2.1rem,10.5vw,3rem)}
+ .dfh-actions{grid-template-columns:1fr}
+ .dfh-actions .button{width:100%}
+ .dfh-vineyard img{aspect-ratio:4/3}
+ .dfh-vineyard figcaption{position:static;background:#0d0a08}
+ .dfh-loop,.shots,.shelf-grid,.family{grid-template-columns:1fr}
+ .family img{max-height:70vh}
+ .powered-strip{grid-template-columns:1fr}
+ .dfh-cta-band .hero-actions .button{width:100%}
+ .lightbox-bar{flex-wrap:wrap}
+}
+
+/* ---------- Investors page ---------- */
+.investors-main{padding-top:78px}
+@media (max-width:980px){.investors-main{padding-top:68px}}
+
+/* Grid children may shrink below their content; long button labels wrap. */
+.dfh-hero-grid>*,.dfh-game-head>*,.shots>*,.family>*,.shelf-grid>*,.method-grid>*{min-width:0}
+.dfh-actions .button{flex-wrap:wrap;gap:.25rem 1rem;text-align:left;white-space:normal}
+.dfh-copy h1,.section h2{overflow-wrap:break-word}
+
+/* width/height attributes reserve space; CSS keeps the real proportions. */
+.shot img,.dfh-vineyard img,.studio-portrait img,.dfh-art img{height:auto}
+.shelf-card .pixel-thumb{position:relative;overflow:hidden}
+.shelf-card .pixel-thumb img{position:absolute;top:6%;left:50%;height:88%;width:auto;max-width:none;transform:translateX(-50%);box-shadow:0 10px 30px #000}
+/* Decorative outline words may run past the edge; never the page itself. */
+.home main{overflow-x:clip}
+.shot .zoom{height:auto}
+
+/* ---------- Review 2 (Mira #4369/#4370) ---------- */
+.lang-switch a{font-size:.68rem;font-weight:800;letter-spacing:.08em;filter:none}
+html[lang="en"] .dfh-copy h1{font-size:clamp(2.2rem,3.7vw,3.9rem)}
+.dfh-family-line{margin:clamp(2.5rem,5vw,4rem) 0 0;max-width:68ch;font:500 clamp(1.08rem,1.6vw,1.35rem)/1.55 Georgia,serif;color:#f1d8a7}
+.family{margin-top:1.5rem}
+.family figcaption{font-size:.88rem}
+/* RUN IT / ЗАПУСТИ must fit its column, not hide past the edge. */
+.studio .method-stat{min-width:0}
+.studio .method-stat strong{font-size:clamp(2.6rem,5.4vw,5.6rem);overflow-wrap:anywhere;line-height:.95}
+/* Calmer gaps between sections; keep some air. */
+.home .section{padding-block:clamp(3.5rem,6vw,6rem)}
+.home .dfh-cta-band{margin-top:clamp(2rem,4vw,3rem)}
+.home .manifesto-band{margin-top:0}
+
+/* ---------- Phone: the way into the game comes first ---------- */
+@media (max-width:620px){
+ .home .site-header{height:60px;padding:0 1rem}
+ .home .brand img{width:34px;height:34px}
+ .home nav{top:60px}
+ .home .dfh-hero{padding-top:60px}
+ .dfh-copy{display:flex;flex-direction:column;padding:1rem 1rem 0}
+ .dfh-copy .eyebrow{order:1;font-size:.58rem;letter-spacing:.2em;margin:0}
+ .dfh-copy h1{order:2;font-size:clamp(1.9rem,8.6vw,2.25rem);line-height:1.05;margin:.45rem 0 .9rem}
+ html[lang="en"] .dfh-copy h1{font-size:clamp(1.85rem,8.2vw,2.2rem)}
+ .dfh-actions{order:3;margin-top:0;gap:.55rem}
+ .dfh-actions .button{min-height:50px;padding:.7rem .9rem}
+ .dfh-deck{order:4;margin-top:1.1rem;font-size:1.02rem}
+ .dfh-wine{order:5;margin-top:.8rem}
+ .home .section{padding-block:3rem}
+}
+@media (max-width:980px) and (min-width:621px){
+ .home nav{top:68px}
+}
+/* The word stays whole and sized to its own column. */
+.studio .method-stat{container-type:inline-size}
+.studio .method-stat strong{overflow-wrap:normal;white-space:nowrap;font-size:clamp(2.4rem,4.4vw,4.6rem);font-size:min(5.6rem,15cqi)}
+
+/* Live gameplay frames: the estate wide, the depths in pairs. */
+.shots{grid-template-columns:repeat(2,minmax(0,1fr))}
+.shot.wide{grid-column:1/-1}
+@media (max-width:620px){.shots{grid-template-columns:1fr}}
+.shots-note{margin:.7rem 0 0;font-size:.74rem;letter-spacing:.06em;color:var(--muted)}
