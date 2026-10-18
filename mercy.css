@@ -308,6 +308,7 @@ body.mercy-site {
 .choice { padding: clamp(32px,4vw,54px); }
 .choice.box { background: rgba(255,255,255,.84); }
 .choice.concierge { background: var(--m-petrol); color:#fff; }
+.choice.concierge .button.primary { background: var(--m-pearl); color: var(--m-petrol); border-color: var(--m-pearl); }
 .choice h3 { margin:0; font:500 clamp(2.2rem,4vw,4rem)/1 "Palatino Linotype",serif; }
 .choice .cost { font-size: clamp(2rem,3vw,3.3rem); font-weight:800; margin:24px 0 6px; }
 .choice ul { padding-left: 20px; line-height:1.8; }
