@@ -326,6 +326,66 @@ body.mercy-site {
 .faq summary { cursor:pointer; font-weight:750; font-size:1.08rem; }
 .faq details p { max-width:800px; color:rgba(8,28,41,.7); }
 
+/* AIHQ: a persistent pair, a shared headquarters, and work carried to completion. */
+.aihq-page .aihq-hero { min-height: min(920px, 100vh); }
+.aihq-page .aihq-copy h1 { max-width: 780px; font-size: clamp(3.2rem,5.8vw,6.7rem); line-height: .99; text-wrap: balance; }
+.aihq-page .aihq-copy .aihq-intro-label { margin: 0 0 22px; color: var(--m-gold); font-size: .94rem; font-weight: 700; letter-spacing: .03em; }
+.aihq-page .aihq-copy > p:not(.aihq-intro-label) { max-width: 660px; font-size: clamp(1.08rem,1.3vw,1.3rem); line-height: 1.6; }
+.aihq-page .mercy-section { scroll-margin-top: 76px; }
+.aihq-section-heading { max-width: 1050px; }
+.aihq-section-heading > p, .aihq-story p, .aihq-closing > p { max-width: 850px; font-size: clamp(1.08rem,1.4vw,1.3rem); line-height: 1.7; }
+.aihq-pair { background: #eef4f3; color: var(--m-ink); }
+.aihq-page .aihq-pair h2, .aihq-page .aihq-idea h2, .aihq-page .aihq-example h2 { color: var(--m-ink); }
+.pair-diagram { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: clamp(14px,3vw,42px); margin-top: 50px; }
+.pair-node { min-height: 240px; padding: clamp(28px,4vw,50px); background: #fff; border-radius: 26px; box-shadow: 0 18px 60px rgba(8,44,56,.08); }
+.pair-node.angel { color: #fff; background: #0a4656; }
+.pair-node span { display: block; color: #487381; font-size: .92rem; font-weight: 700; }
+.pair-node.angel span { color: #b8dfe4; }
+.pair-node strong { display: block; margin-top: 16px; font: 500 clamp(1.7rem,2.5vw,2.7rem)/1.1 "Palatino Linotype",serif; }
+.pair-node p { max-width: 40ch; line-height: 1.6; }
+.pair-link { color: #a98236; font: 400 clamp(3rem,5vw,5rem)/1 Georgia,serif; }
+.pair-caption { margin: 28px 0 0; max-width: 86ch; color: #345966; font-size: 1.05rem; line-height: 1.65; }
+.aihq-idea { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(35px,7vw,100px); background: #f6f3ec; color: var(--m-ink); }
+.aihq-idea h2 { position: sticky; top: 110px; }
+.aihq-story p:first-child { margin-top: 0; }
+.aihq-story strong { color: #0a5869; }
+.aihq-flow { background: #071f2b; }
+.aihq-flow .aihq-section-heading p, .aihq-capabilities .aihq-section-heading p { color: #c9dadd; }
+.flow-list { list-style: none; counter-reset: flow; padding: 0; margin: 55px 0 0; border-top: 1px solid rgba(210,236,237,.25); }
+.flow-list li { counter-increment: flow; display: grid; grid-template-columns: 56px minmax(200px,.8fr) 1.2fr; gap: 20px; align-items: baseline; padding: 25px 0; border-bottom: 1px solid rgba(210,236,237,.25); }
+.flow-list li::before { content: counter(flow, decimal-leading-zero); color: var(--m-gold); font: 700 1.25rem Georgia,serif; }
+.flow-list strong { font-size: 1.22rem; color: #fff; }
+.flow-list span { max-width: 58ch; color: #c9dadd; line-height: 1.6; }
+.flow-conclusion { margin: 42px 0 0; color: var(--m-gold); font: 500 clamp(1.5rem,2.6vw,2.5rem)/1.15 "Palatino Linotype",serif; }
+.aihq-capabilities { background: #0c3541; }
+.capability-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 0 clamp(28px,4vw,60px); margin-top: 55px; }
+.capability-grid article { padding: 22px 0 26px; border-top: 1px solid rgba(210,236,237,.35); }
+.capability-grid h3 { margin: 0 0 12px; color: #f3d28e; font-size: 1.2rem; }
+.capability-grid p { margin: 0; max-width: 45ch; color: #d1e0e2; line-height: 1.65; }
+.aihq-example { background: #e5eeec; color: var(--m-ink); }
+.example-route { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 42px; }
+.example-route span { padding: 12px 19px; background: white; color: #0c4656; border-radius: 100px; font-weight: 700; }
+.example-note { max-width: 75ch; margin: 25px 0 0; color: #375c67; line-height: 1.6; }
+.aihq-closing { background: #061f2b; }
+.aihq-closing > p { color: #d1e0e2; }
+.aihq-closing .aihq-living { max-width: 70ch; margin: 65px 0 0; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.25); color: #a9c2c8; font-size: .95rem; }
+@media (max-width: 900px) {
+  .aihq-idea { grid-template-columns: 1fr; }
+  .aihq-idea h2 { position: static; }
+  .capability-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 680px) {
+  .aihq-page .aihq-hero { min-height: auto; }
+  .aihq-page .aihq-copy h1 { font-size: clamp(2.75rem,11vw,4.5rem); }
+  .pair-diagram { grid-template-columns: 1fr; gap: 12px; }
+  .pair-node { min-height: 0; }
+  .pair-link { text-align: center; line-height: .7; }
+  .flow-list li { grid-template-columns: 38px 1fr; gap: 8px 14px; }
+  .flow-list li span { grid-column: 2; }
+  .capability-grid { grid-template-columns: 1fr; }
+  .aihq-page .mercy-actions { align-items: stretch; }
+}
+
 @media (max-width: 1050px) {
   .mercy-site .site-header { height: 66px; padding: 0 18px; }
   .mercy-site nav { top:66px; background:rgba(4,30,40,.97); }
